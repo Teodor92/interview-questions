@@ -1,0 +1,38 @@
+# JavaScript(ES5/ES6) Interview Questions
+
+- Does JavaScript pass parameter by value or by reference?
+- What is the keyword this in JavaScript? What problems can it - cause?
+- What is the difference between an undeclared and undefined - variable?
+- What is === operator?
+- What is the drawback of creating true private methods in - JavaScript?
+- What is a potential pitfall with using typeof bar === "object" to - determine if bar is an object? How can this pitfall be avoided?
+- What is a closure? How to create one in JavaScript?
+- What is an anonymous function? How does it differ from a regular - function? When will you use it?
+- What is duck/weak typing?
+- What are higher order functions? Provide an example in the - context of JavaScript.
+- What is function currying? How would you implement currying for - any functions?
+- What is the difference between a function declaration and a - function expression?
+- What is the difference between a function and an arrow function?
+- What is JavaScript Self-Invoking anonymous function or - Self-Executing anonymous function?
+- What are promises? Bonus: Are promises monads?
+- How do you check if an object is an array or not?
+- What is the difference between call and apply?
+- What is function hoisting in JavaScript?
+- What is the difference between classical inheritance and - prototypal inheritance?
+- What is the difference between one-way data flow and two-way data - binding?
+- When should you use let and when var? What is the difference - between the two?
+- What is the difference between a let variable and a const - variable? Provide an example.
+- What does Destructuring Assignment mean?
+- What does “favor object composition over class inheritance” mean?
+- How to achieve encapsulation in the context of JavaScript?
+- What are generators? What is lazy evaluation?
+- What is a pure function? What is a side effect?
+- What is cyclomatic/McCabe complexity?
+- What are the pros and cons of functional programming versus - object-oriented programming?
+- What is the difference between synchronous, asynchronous and - parallel function calls? How can do each one in JavaScript?
+- Why is it bad to use global variables? Give examples.
+- What is event delegation and what problem does it solve?
+- What is the difference between throttling and debouncing?
+- What is event bubbling?
+- What is function binding?
+- What is the event loop?
