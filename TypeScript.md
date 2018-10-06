@@ -1,6 +1,6 @@
 # TypeScript interview questions
 
-- Which are the different data types supported by TypeScript?
+- Which are the different data types supported by TypeScript? What do they represent?
 > `boolean`, `number`, `string`, `object`, `Array`, `enum`, `any`, `void`, `never`, `unknown`
 
 - What are classes in TypeScript?
