@@ -104,16 +104,16 @@
 22. What does **destructuring assignment** mean?
 > Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects into a bunch of variables, as sometimes they are more convenient. Destructuring also works great with complex functions that have a lot of parameters, default values, and soon we’ll see how these are handled too.
 
-- How to achieve encapsulation in the context of JavaScript?
+23. How to achieve encapsulation in the context of JavaScript?
 > - In the context of module based Functional programing - we can do that by exporting only public functions from our modules and leaving the other ones as private.
 > - In the context of OOP we can mimic the private members of class or use the new es9 private methods and accessors feature.
 
-- What are generators? What is lazy evaluation?
+24. What are generators? What is lazy evaluation?
 > A generator is a function that can stop midway and then continue from where it stopped. In short, a generator appears to be a function but it behaves like an iterator.
 
 > Lazy Evaluation is an evaluation model which delays the evaluation of an expression until its value is needed. That is, if we don’t need the value, it won’t exist. It is calculated as we demand it. Generators are lazy evaluated.
 
-- What is the difference between synchronous, asynchronous and - parallel function calls? How can do each one in JavaScript?
+25. What is the difference between synchronous, asynchronous and - parallel function calls? How can do each one in JavaScript?
 
 > - Synchronous programing is the default paradigm. Things execute one after another.
 > For the other two types you can imagine the following scenario:
@@ -123,7 +123,7 @@
 
 > In JavaScript we can use callbacks, Promises and async/await to do async programing and WebWorkers to do parallel programming.
 
-- Why is it bad to use global variables? Give examples.
+26. Why is it bad to use global variables? Give examples.
 
 > The main reason is the shared state problem:
 
@@ -133,10 +133,30 @@
 
 > If you don't rely on global variables, you can pass state around between different functions as needed. That way you stand a much better chance of understanding what each function does, as you don't need to take the global state into account.
 
-- What is event delegation and what problem does it solve?
+27. What is event bubbling?
+> When an event is triggered on an element, for example a mouse click on a button, the same event is also triggered on all of that element’s ancestors. This process is known as event bubbling;
 
+28. What is event delegation and what problem does it solve?
+> Event delegation makes use of two often overlooked features of JavaScript events: event bubbling and the target element. When an event is triggered on an element, for example a mouse click on a button, the same event is also triggered on all of that element’s ancestors. This process is known as event bubbling; the event bubbles up from the originating element to the top of the DOM tree. The target element of any event is the originating element, the button in our example, and is stored in a property of the event object. Using event delegation it’s possible to add an event handler to an element, wait for an event to bubble up from a child element and easily determine from which element the event originated.
 
-- What is the difference between throttling and debouncing?
-- What is event bubbling?
-- What is function binding?
-- What is the event loop?
+29. What is the difference between throttling and debouncing?
+
+> - Throttling will delay executing a function. It will reduce the notifications of an event that fires multiple times.
+> - Debouncing will bunch a series of sequential calls to a function into a single call to that function. It ensures that one notification is made for an event that fires multiple times.
+
+> If you have a function that gets called a lot - for example when a resize or mouse move event occurs, it can be called a lot of times. If you don't want this behaviour, you can Throttle it so that the function is called at regular intervals. Debouncing will mean it is called at the end (or start) of a bunch of events.
+
+30. What is the event loop?
+> TODO: A very large topic. Not sure if it's a good question.
+
+31. What data types exit in JavaScript?
+
+> Six data types that are primitives:
+> - Boolean
+> - Null
+> - Undefined
+> - Number
+> - String
+> - Symbol (new in ECMAScript 6)
+>
+> and Object
