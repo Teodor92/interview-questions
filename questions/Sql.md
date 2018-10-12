@@ -177,7 +177,7 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 > - Merge Join – O (n + m)
 > - Hash Join – O (n + m)
 
-## 27. Cna you name some optimization tips?
+## 27. Can you name some optimization tips?
 
 > - Use appropriate Indices (clustered, non-clustered)
 > - Inspect your WHERE clauses, when performance is an issue
