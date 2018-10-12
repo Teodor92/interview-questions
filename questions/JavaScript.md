@@ -186,3 +186,14 @@
 > - Symbol (new in ECMAScript 6)
 >
 > and Object
+
+## 32. What are the most common module systems in JavaScript?
+
+> - The CommonJS module system - `module.export` syntax
+> - The ES6 module system - `import/export` syntax
+
+## 33. Why is using `eval` bad?
+
+> - Improper use of eval opens up your code for injection attacks
+> - Debugging can be more challenging (no line numbers, etc.)
+> - eval'd code executes slower (no opportunity to compile/cache eval'd code)
