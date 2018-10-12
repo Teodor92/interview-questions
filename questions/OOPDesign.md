@@ -1,6 +1,6 @@
 # OOP Design
 
-1. What does “favor object composition over class inheritance” mean?
+## 1. What does “favor object composition over class inheritance” mean?
 
 > It means that code reuse should be achieved by assembling smaller units of functionality into new objects instead of inheriting from classes and creating object taxonomies.
 > In other words, use can-do, has-a, or uses-a relationships instead of is-a relationships. Using this approach we:
