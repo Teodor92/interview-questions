@@ -51,3 +51,47 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 8. What are the differences between Observables and Promises?
 > - Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place.
 > - Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event. 
+
+9. Why do you like Angular?
+
+> - This is a very subjective one and there is no right answer to this :)
+
+10. What does this line do?
+
+```
+@HostBinding('class.valid') isValid;
+```
+
+> Binds a host element property (here, the CSS class valid) to a directive/component property (isValid).
+
+What is the difference between a smart/container/parent component and dumb/presentational/prue component? What is a good use case example? What are the advantages?
+
+> A Dumb Component is a component that works like a pure function. 
+(A pure function is a function that for given function arguments, will always produce the same return value.)
+A Dumb Component is just like that. It is a component that for received data (inputs), will always look and behave the same, possibly also producing other data (events, via outputs).
+
+> A Smart Component is a component that is more like an impure function.
+(An impure function is a function that touches “the outer world”: either by obtaining data from external services or by producing side effects.)
+A Smart Component is just like that. It is not only dependant on its’ inputs, but also on some kind of external data (“the outer world”), which is not passed directly via `@Input()`. It might also produce some side effects that are not emitted through the `@Output()` interface.
+For example, a component which gets current user data from a singleton service instantiated elsewhere; from an external API; or from LocalStorage. A component that changes the state of an external service; issues an API call; or changes the stored data in LocalStorage.
+
+> See [here](https://medium.com/@jtomaszewski/how-to-write-good-composable-and-pure-components-in-angular-2-1756945c0f5b) for more details.
+
+11. How do components comunicate with each other?
+
+> Types of communication:
+> - Parent/child communication using @Input decorator and @Output decorator with EventEmitter.
+> - Communication using services and Angular dependency injection system.
+> - Communication via store (redux) which also uses Angular DI.
+
+12. What is the difference between an observable and a promise?
+
+> A Promise handles a single event when an async operation completes or fails.
+Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
+
+> An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
+Often Observable is preferred over Promise because it provides the features of Promise and more. With Observable it doesn't matter if you want to handle 0, 1, or multiple events. You can utilize the same API in each case.
+>
+> - Observable also has the advantage over Promise to be cancelable. If the result of an HTTP request to a server or some other expensive async operation isn't needed anymore, the Subscription of an Observable allows to cancel the subscription, while a Promise will eventually call the success or failed callback even when you don't need the notification or the result it provides anymore.
+> - Observable provides operators like map, forEach, reduce, ... similar to an array
+> - There are also powerful operators like retry(), or replay(), ... that are often quite handy.
