@@ -10,7 +10,18 @@
 
 ## 5. You've just been assigned to a project in a new technology how would you get started?
 
-## 6. What do you do to stay abreast of the latest technologies and tools?
-
 ## 7. What do you do when you get stuck with a problem you can't solve?
+
+## 8. What do you do to stay on top of the latest technologies and tools?
+
+## 9. Whose blogs or podcasts do you follow? Do you blog or podcast?
+
+## 10. Whose blogs or podcasts do you follow? Do you blog or podcast?
+
+## 11. Tell me about some of your hobby projects that you've written in your off time.
+
+## 12. What is the last programming book you read?
+
+## 13. Tell me about 3 times you failed.
+
 
