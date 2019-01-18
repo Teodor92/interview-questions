@@ -23,5 +23,3 @@
 ## 12. What is the last programming book you read?
 
 ## 13. Tell me about 3 times you failed.
-
-
