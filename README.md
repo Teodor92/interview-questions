@@ -1,6 +1,6 @@
 # Interview questions
 
-A collection of interview questions for various languages and technologies.
+A collection of interview questions for various languages, technologies and concepts.
 
 - [Angular](./questions/Angular.md)
 - [Code Quality](./questions/CodeQuality.md)
@@ -14,3 +14,7 @@ A collection of interview questions for various languages and technologies.
 - [Security](./questions/Security.md)
 - [SimpleCoding](./questions/SimpleCoding.md)
 - [TypeScript](./questions/TypeScript.md)
+
+## Question level
+
+Bare in mind that the question level is very subjective. Some of the questions are open edded, meaning that it is up to the interviewer to see how much depth the interviee can put into their answer.
