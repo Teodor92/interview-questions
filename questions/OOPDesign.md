@@ -2,28 +2,28 @@
 
 ## 1. What is OOP and what are the 4 pillars of OOP?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > TODO:
 
 ## 2. What is an object and what is a class?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > TODO:
 
 ## 3. What is multiple inheritance and what is specific about it? How is this implemented in different languages?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > TODO:
 
 ## 4. What does “favor object composition over class inheritance” mean?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > It means that code reuse should be achieved by assembling smaller units of functionality into new objects instead of inheriting from classes and creating object taxonomies.
@@ -37,10 +37,10 @@
 
 ## 5. What is the diamond problem?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 ## 6. What is the Banana Monkey Jungle problem?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |

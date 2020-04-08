@@ -2,7 +2,7 @@
 
 ## 1. What is a function?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > A function is a process which takes some input, called arguments, and produces some output called a return value. Functions may serve the following purposes:
@@ -13,7 +13,7 @@
 
 ## 2. What is a side effect?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > A side effect is anything a method does besides computing and returning a value. Any change of instance or class field values is a side effect, as is drawing something on the screen, writing to a file or a network connection.
@@ -24,7 +24,7 @@
 
 ## 3. What is a pure function?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - Given the same input, will always return the same output.
@@ -34,7 +34,7 @@
 
 ## 4. What are the pros and cons of functional programming versus - object-oriented programming?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > TODO

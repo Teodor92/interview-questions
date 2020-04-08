@@ -2,7 +2,7 @@
 
 ## 1. What are the advantages of Normalization versus denormalization?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > Normalization is better for OLTP (On-line Transaction Processing) systems:
@@ -14,7 +14,7 @@
 
 ## 2. What is BASE?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > - **B**asic **A**vailability - The database appears to work most of the time.
@@ -23,14 +23,14 @@
 
 ## 3. What does the CAP theorem state?
 
-| Level | P3+ |
+| Level | Hard |
 | ----- | --- |
 
-> TODO: 
+> TODO:
 
 ## 4. - What is ACID?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - **A**tomicity - either all of the pieces of information are committed or none are
@@ -40,7 +40,7 @@
 
 ## 5. What are the differences between clustered and non-clustered indices?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > - With a clustered index the rows are **stored physically** on the disk in the same order as the index. There can therefore be only one clustered index.
@@ -50,7 +50,7 @@
 
 ## 6. What are the differences between primary keys and unique indexes?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - A **primary key also implies NOT NULL**, but a unique index can be nullable.
@@ -59,16 +59,17 @@
 
 ## 7. What are dirty reads, non-repeatable reads and phantom reads?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - **Dirty Reads** - A dirty read occurs when a transaction reads data that has not yet been committed. For example, suppose transaction 1 updates a row. Transaction 2 reads the updated row before transaction 1 commits the update. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.
 > - **Non-repeatable** - Reads A non-repeatable read occurs when a transaction reads the same row twice but gets different data each time. For example, suppose transaction 1 reads a row. Transaction 2 updates or deletes that row and commits the update or delete. If transaction 1 rereads the row, it retrieves different row values or discovers that the row has been deleted.
-> - **Phantoms** - A phantom is a row that matches the search criteria but is not initially seen. For example, suppose transaction 1 reads a set of rows that satisfy some search criteria. Transaction 2 generates a new row (through either an update or an insert) that matches the search criteria for transaction 1. If transaction 1 reexecutes the statement that reads the rows, it gets a different set of rows.
+> - **Phantoms** - A phantom is a row that matches the search criteria but is not initially seen. For example, suppose transaction 1 reads a set of rows that satisfy some search criteria.
+> Transaction 2 generates a new row (through either an update or an insert) that matches the search criteria for transaction 1. If transaction 1 reexecutes the statement that reads the rows, it gets a different set of rows.
 
 ## 8. What are the transaction isolation levels?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - **Read Uncommitted** – Read Uncommitted is the lowest isolation level. In this level, one transaction may read not yet commited changes made by other transaction, thereby allowing dirty reads. In this level, transactions are not isolated from each other.
@@ -85,14 +86,14 @@
 
 ## 9. What is a SQL injection?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > A type of an injection attack where the attacker executes a malicious batch of SQL inside our database server.
 
 ## 10. How can we protect ourselves from a SQL injection?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - NEVER, EVER execute a raw SQL query
@@ -102,43 +103,43 @@
 
 ## 11. What are the different types of joins?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 ![alt text](../assets/join-types.jpg)
 
 ## 12. What is `COALESCE`?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > `COALESCE` will take any number of parameters, and return the first value encountered that isn't `NULL`.
 
 ## 13. What is the difference between `DELETE` and `TRUNCATE`?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > TODO:
 
 ## 14. What does UNION do? What is the difference between UNION and UNION ALL?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 ## 15. What is the difference between the WHERE and HAVING clauses?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 ## 16. What are the difference between stored procedures and user defined functions?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 ## 17. What is the difference between "stored procedure" and "dynamic SQL"?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > - Stored procedures are stored in data base in complied form.
@@ -146,28 +147,28 @@
 
 ## 18. What's the difference between CREATE PROC and CREATE PROCEDURE?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > They are the same.
 
 ## 19. Can we call trigger inside a stored procedure?
 
-| Level | P1+ |
+| Level | Easy |
 | ----- | --- |
 
 > No, triggers cannot be called manually.
 
 ## 20. What are CLR stored procedures?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > Stored procedures written in a CLR compatible language like C#, VB.NET (How about no.), F#, etc.
 
 ## 21. When to use CLR stored procedures and when T-SQL ones?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > - If your logic mostly includes transformations of massive sets of data, which can be performed using set operations, then use T-SQL.
@@ -175,7 +176,7 @@
 
 ## 22. What is the best approach to check if a query has returned a result?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > - It’s generally a better idea to use the `EXISTS` function over the `COUNT`.
@@ -184,7 +185,7 @@
 
 ## 23. Correlated subqueries vs uncorrelated subqueries?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 > - Correlated Subquery is a sub-query that uses values from the outer query. In this case the inner query has to be executed for every row of outer query.
@@ -193,7 +194,7 @@
 
 ## 24. What is parameter sniffing?
 
-| Level | P3+ |
+| Level | Hard |
 | ----- | --- |
 
 > - During compilation, the value passed as the store procedure parameter is evaluated and used to create an execution plan.
@@ -202,7 +203,7 @@
 
 ## 25. How can we optimize incorrect parameter sniffing?
 
-| Level | P3+ |
+| Level | Hard |
 | ----- | --- |
 
 > - Recompiling
@@ -246,7 +247,7 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 26. What the logarithmic complexity if the different query operations?
 
-| Level | P3+ |
+| Level | Hard |
 | ----- | --- |
 
 > - Clustered Index Scan – O(n)
@@ -259,7 +260,7 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 27. Can you name some optimization tips?
 
-| Level | P3+ |
+| Level | Hard |
 | ----- | --- |
 
 > - Use appropriate Indices (clustered, non-clustered)
@@ -271,10 +272,10 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 28. What are some alternate ways to store data other than a relational database? Why would you do that, and what are the trade-offs?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |
 
 ## 29. If your database was under a lot of strain, what are the first few things you might consider to speed it up?
 
-| Level | P2+ |
+| Level | Medium |
 | ----- | --- |

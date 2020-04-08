@@ -14,6 +14,7 @@ A collection of interview questions for various languages, technologies and conc
 - [Security](./questions/Security.md)
 - [SimpleCoding](./questions/SimpleCoding.md)
 - [TypeScript](./questions/TypeScript.md)
+- [Web](./questions/Web.md)
 
 ## Question level
 

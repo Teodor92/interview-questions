@@ -1,0 +1,12 @@
+node_modules/
+dist
+coverage
+
+.idea
+.npmrc
+.vscode
+.npmrc
+.awcache
+.DS_Store
+.log
+.DS_Store
