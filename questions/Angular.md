@@ -164,3 +164,8 @@ You can utilize the same API in each case.
 > A single custom element can implement more-or-less complex logic combined with more-or-less complex DOM. An entire web application of arbitrary complexity can be added to a page by an import and `<my-app></my-app>` but also simpler reusable and composable components can be implemented as custom elements where the internal representation is hidden in the shadow DOM like `<date-picker></date-picker>`.
 
 > Style encapsulation Shadow DOM is also about preventing styles being applied accidentally to elements the designer didn't intend to, for example because the CSS or components library you are using changed a selector that now applies to other elements that use the same CSS class names. Styles added to components are scoped to that component and bleeding out or in of styles is prevented.
+
+## 15. What is Reactive Programming?
+
+> Reactive programming is programming with asynchronous data streams.
+
