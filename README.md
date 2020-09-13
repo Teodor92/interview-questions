@@ -9,6 +9,7 @@ A collection of interview questions for various languages, technologies and conc
 - [Functional Programing](./questions/FPDesign.md)
 - [General Warm Up](./questions/GeneralWarmUp.md)
 - [JavaScript](./questions/JavaScript.md)
+- [.NET](./questions/DotNet.md)
 - [OOP Design](./questions/OOPDesign.md)
 - [Open Ended](./questions/OpenEnded.md)
 - [Security](./questions/Security.md)
