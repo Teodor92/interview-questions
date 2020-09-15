@@ -203,10 +203,31 @@
 > I can partially answer it.
 > TODO
 
-## 26. What is Parsing?
+## 26. What is Parsing? What is Casting?
 
-> I can answer it.
-> TODO
+###### Parsing
+
+* Conversion of string that represents a base type to that type.
+* The reverse operation is formatting (converting a base type to its string representation).
+* Most commonly strings are converted to numeric values ( `Parse` and `TryParse` ) and DateTime objects. We can also parse strings that represent `Char` , `Boolean` and `Enum` into data types.
+
+###### Casting
+
+* Every data type has certain attributes such as the amount os memory space it takes, the range of possible values and the members that it makes available.
+* Casting is a type conversion that can be automatically supported by . NET Framework or custom type conversion.
+
+* Automatic type conversions:
+
+     - from a derived class to a base class. Instance of any class or structure can be converted to an `Object` instance.
+     - from a base class to the original derived class. Requires a casting operator.
+     - from a type that implements an interface to an interface object that represents that interface. 
+     - from an interface object back to the original type that implements that interface. Requires a casting operator.
+
+* Custom type conversions:
+
+     - `implicit` operator - widen conversions between types
+     - `explicit` operator - narrow conversions between types
+     - `IConvertible` interface, `Convert` class and `TypeConverter` class 
 
 ## 27. What is a Delegate?
 
@@ -250,8 +271,9 @@
 
 ## 35. Can multiple catch blocks be executed?
 
-> I can not answer it.
-> TODO
+* There can be multiple `catch` blocks with `try` statement but only the one that first matches the exception will be executed. 
+* Once the `catch` block is executed, the controls skip the other catch blocks and is transferred to `finally` block.
+* The order of the `catch` blocks is important: from more specific exception to more general.
 
 ## 36. What are the different access levels?
 
@@ -325,7 +347,6 @@
 * Nullable types are all the values for the value type T and an additional `null` value. 
 * Used when we need to represent missing or undefined value.
 * Example:    
-
 
 ``` csharp
      double? pi = null; 
