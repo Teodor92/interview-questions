@@ -227,8 +227,20 @@
 
 ## 25. What are Regular expressions?
 
-> I can partially answer it.
-> TODO
+* A pattern that is used to validate and parse an input text if it matches.
+* Part of `.Net Framework` . 
+* The Regex class is an immutable regular expression that is in the `System.Text.RegularExpression` namespace.  
+* Defined by a special syntax.
+* Common methods are: `Regex.IsMatch` , `Regex.Match` , `Regex.Replace` , etc.
+* Example:
+
+``` csharp
+    string pattern = @"^[A-Z][a-zA-Z]*$";
+    string firstName = "Victor";
+    if(Regex.IsMatch(firstName, pattern){
+        Console.WriteLine("It's a match!");
+    }
+ ```
 
 ## 26. What is Parsing? What is Casting?
 
