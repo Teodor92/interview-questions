@@ -346,8 +346,9 @@
 
 ## 44. Can a private virtual method can be overridden?
 
-> I can answer it.
-> TODO
+* Virtual methods contain a default implementation and can be overridden by the derived class. 
+* Private methods can only be accessed by the class defining them, but not the derived class. To have a method that the derived class can access, it should be `protected` in the base class.
+* Virtual methods that can be overridden by the derived class are useless if defined `private` in the base class. The reason is they can not be accessed by the derived class. The solution is the virtual methods to have `protected` access modifier.
 
 ## 45. How do you inherit a class into other class in C#? Can you inherit multiple classes? What about interfaces?
 
