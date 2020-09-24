@@ -400,8 +400,14 @@
 
 ## 53. What are C# attributes and its significance?
 
-> I can partially answer it.
-> TODO
+* Adds information and metadata about some entity in code. 
+* Part of `.Net Framework` .
+* We can apply one or more attributes to assemblies, modules, classes and properties. 
+* Attributes can accept arguments just like methods.
+* Attributes are used surrounded by square brackets ([]) above the entity they describe. 
+* We can define custom attributes.
+* Reflection can be used to obtain metadata about the program by accessing the attributes at run-time.
+* Examples: `Description` , `DefaultValue` , `Serializable` , `DllImport` (exposed by an unmanaged dynamic-link library (DLL) as a static entry point), `Conditional` (method call should be ignored unless a specified conditional compilation symbol is defined), `AssemblyVersion` , `Obsolete` (raise a warning about code that should no longer be used), etc.
 
 ## 54. How to implement a singleton design pattern in C#? And what about a thread safe singleton?
 
