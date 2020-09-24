@@ -127,8 +127,8 @@
 
 ## 13. What is the difference between the Virtual method and the Abstract method?
 
-> I can answer it.
-> TODO
+* Virtual methods have a default implementation and provide the option of the derived classes to override them with custom implementation.
+* Abstract methods are in abstract classes. They contain only the definition and don't have an implementation of the method. The derived classes have to override the definitions. 
 
 ## 14. What is a Namespaces in C#?
 
@@ -183,8 +183,23 @@
 
 ## 22. What is an Array?
 
-> I can answer it.
-> TODO
+* Arrays are reference types that store multiple variables of the same data type.
+* As with any other type - reference of value type, predefined or user-defined, it inherits from `Object` .
+* Arrays are zero-indexed and elements can be accessed by index. 
+* Array elements can be any type and by default are zero or `null` .
+* In jagged arrays which are arrays of arrays, the elements are reference type and their default value is `null` . 
+* Arrays derive from the abstract base type `Array` that implements `IEnumerable` and `IEnumerable<T>`
+* Arrays can be accessed by `For` , `ForEach` , `While` loops.
+* `System.Array` class includes method for creating, manipulating, searching and sorting arrays like `Sort` , `Clone` , `Copy` , `Equals` , `Empty` , `Find` , `FindIndex` , `Exists` , `GetValue` , `IndexOf` , etc.
+* Arrays can be single-dimensional, multidimensional or jagged arrays:
+
+``` csharp
+     int[] singleArray = new int[5];
+     int[,] multiArray = new int[2, 3];
+     int[,] multiArray2 = new int { {1, 2, 3 }, {7, 8, 9}};
+     int[] [] jaggedArray = new int [6][];
+     jaggedArray[0] = new int[4]{1, 2, 3, 4, 5};
+```
 
 ## 23. What is a Jagged Array?
 
