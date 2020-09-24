@@ -157,8 +157,14 @@
 
 ## 18. What is a Destructor in C#?
 
-> I can not answer it.
-> TODO
+* Destructor is a method inside a class that destroys the object when it is no longer in use. 
+* Called when the program exits.
+* Called implicitly by the Garbage Collector in `.NET Framework` .
+* The destructor is unique for every class and a class can not have more than one destructor. 
+* Destructors don't accept any parameters and access modifiers. 
+* A destructor doesn't have a return type and just like a constructor, it has the same name as the class. The only difference between them is the "~" before the destructor's name.
+* A destructor can not be inherited or overloaded.
+* Destructors are used only in classes, not in `Struct` .
 
 ## 19. What are Boxing and Unboxing?
 
@@ -195,8 +201,14 @@
 
 ## 24. What is a String?
 
-> I can answer it.
-> TODO
+* A `string` is a object of type `String` that is a sequence of characters - text. 
+* Strings are immutable - once created, they can not be assigned a new value. A new string variable must be made in order to hold that modification. In some cases it is better to use `StringBuilder` . 
+* There is no null-terminating character at the end of the string.
+* String has `Length` property - number of `Char` objects it contains, not the Unicode characters.  
+* The `String` class provides methods for creating, manipulating and comparing strings like `String.Empty` , `String.Substring` , etc.
+* Strings can use extension methods from the `Enumerable` class because it implements `IEnumerable<T>` .
+* Default string comparison and equality: `String.CompareTo` , `String.Equals` (value), `String.Equality` (value).
+* Reference string equality: `Object.ReferenceEquals` - if the two strings are the same objects.
 
 ## 25. What are Regular expressions?
 
