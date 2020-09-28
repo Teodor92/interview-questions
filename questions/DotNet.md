@@ -359,8 +359,23 @@
 
 ## 36. What are the different access levels?
 
-> I can answer it.
-> TODO
+### Accessibility levels for members are defined by access modifiers:
+
+    - `public` - access is not restricted.
+    - `private` - access is limited to the containing type.
+    - `protected` - access is limited to the containing class or types derived from the containing type.
+    - `internal` - access is limited to the current assembly.
+    - `protected internal` - access is limited to the current assembly or types derived from the containing type.
+    - `private protected` - access is limited to the containing class or type derived from the containing class within the current assembly.
+
+* Access modifiers are not allowed for namespaces.
+
+### Default accessibility
+
+* class - members: `private` , allowed accessibility of members: all
+* enum - members: `public` , allowed accessibility of members: none
+* interface - members: `public` , allowed accessibility of members: none
+* struct - members: `private` , allowed accessibility of members: `public` , `internal` , `private`
 
 ## 37. What is the difference between static methods and instance methods?
 
