@@ -358,8 +358,11 @@
 
 ## 43. What is method overloading?
 
-> I can answer it.
-> TODO
+* A way to redefine a method in more that one form.
+* A way to implement polymorphism that allows objects or methods to act in a different way depending on the context they are used.
+* Methods have different signatures - can have the same name but with a different list of parameters (their type, number, order).
+* If we define two methods with the same signature - their name, number, type and order of parameters, a compiler error occurs. 
+* The only the return type is different, but the signature of two methods is the same, a throw a compile-time error is thrown. 
 
 ## 44. Can a private virtual method can be overridden?
 
