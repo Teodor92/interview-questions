@@ -196,8 +196,16 @@
 
 ## 21. What is the difference between finally and finalize block?
 
-> I can not answer it.
-> TODO
+### Finally
+
+* A block of code in the end of exception handling that is executed no matter if the exception is caught or not.
+
+### Finalize
+
+* Method for unmanaged resources (like database connection or file headers) that is used to free them.
+* Used to perform cleanup operations held on unmanaged resources held by object before the object is reclaimed by the garbage collector. 
+* The method is protected and is accessed only through the class or derived class. We can override it.
+* `C#` destructor automatically implements the `Finalize` method. The garbage collector is non-deterministic, you do not know precisely when the garbage collector performs finalization.
 
 ## 22. What is an Array?
 
