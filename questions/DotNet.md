@@ -326,8 +326,13 @@
 
 ## 38. What is a constructor?
 
-> I can answer it.
-> TODO
+* A method that is called automatically when a new instance of the class / struct is created.
+* It has the same name as the class / struct and is useful to set default values for the data members of the new object. 
+* If we don't have a constructor, the compiler will automatically create one default without parameters. 
+* Constructors don't return anything, not even a `void` .
+* Constructors don't have access modifiers.
+* We can have constructor overloading - many constructors with different parameters in one class.
+* We can declare `static` constructor without parameters or access modifier that will be invoked automatically when we create the first instance of the class. In other words, it will be invoked only once no matter how many class instances we create.
 
 ## 39. What is the difference between ref & out parameters?
 
