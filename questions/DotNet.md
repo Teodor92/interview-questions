@@ -359,16 +359,14 @@
 
 ## 36. What are the different access levels?
 
-### Accessibility levels for members are defined by access modifiers:
+### Accessibility levels for members are defined by access modifiers
 
-    - `public` - access is not restricted.
-    - `private` - access is limited to the containing type.
-    - `protected` - access is limited to the containing class or types derived from the containing type.
-    - `internal` - access is limited to the current assembly.
-    - `protected internal` - access is limited to the current assembly or types derived from the containing type.
-    - `private protected` - access is limited to the containing class or type derived from the containing class within the current assembly.
-
-* Access modifiers are not allowed for namespaces.
+* `public` - access is not restricted.
+* `private` - access is limited to the containing type.
+* `protected` - access is limited to the containing class or types derived from the containing type.
+* `internal` - access is limited to the current assembly.
+* `protected internal` - access is limited to the current assembly or types derived from the containing type.
+* `private protected` - access is limited to the containing class or type derived from the containing class within the current assembly.
 
 ### Default accessibility
 
@@ -376,6 +374,7 @@
 * enum - members: `public` , allowed accessibility of members: none
 * interface - members: `public` , allowed accessibility of members: none
 * struct - members: `private` , allowed accessibility of members: `public` , `internal` , `private`
+* Access modifiers are not allowed for namespaces.
 
 ## 37. What is the difference between static methods and instance methods?
 
@@ -406,8 +405,24 @@
 
 ## 41. What is the difference between constants and read-only?
 
-> I can answer it.
-> TODO
+### Constant
+
+* The value of the constant field stays the same throughout the program after once assigned. 
+* Constant fields and locals are not variables, they are a number, string, null reference or boolean values. 
+* The value can not be changed.	
+* We can only assign values in declaration part.
+* Compile time constant.
+* Can be declared inside a method (local).
+* Can not be used with static modifiers.
+
+### Read-only
+
+* Declares a readonly variable that you can assign it only when you declare it or in a constructor of the same class.
+* The value can be changed.	
+* We can assign values in declaration and in the constructor part.
+* Runtime constant.
+* Can not be declared inside a method.
+* Can be used with static modifiers.
 
 ## 42. What are value types and reference types?
 
