@@ -35,13 +35,13 @@
 
 ## 6. What is an Object and a Class?
 
-###### Class
+### Class
 
 * Works as a blueprint for creating objects with specific properties.
 * Data type that is a collection of data members and member functions. 
 * Defines the kids of data and the functionality of its objects will have. 
 
-###### Object
+### Object
 
 * A class data type variable - an instance of the class.
 * A block of memory that has been allocated and configured according to the class. 
@@ -69,13 +69,13 @@
 
 ## 10. What are the different types of classes in C#?
 
-###### What is a class
+### What is a class
 
 * Data types that represent the state (properties) and behavior of an object (the actions it can perform).
 * Can be declared by one of the five access modifiers: public, private, protected, internal, protected internal. The default is internal.
 * Default access modifier of member methods is private. 
 
-###### Abstract classes
+### Abstract classes
 
 * Can have at least one abstract method. Can also have non-abstract methods.
 * Can not create instances from an abstract class. 
@@ -83,20 +83,20 @@
 * Has only one subclass.
 * Methods inside abstract class can not fe private. 
 
-###### Partial classes
+### Partial classes
 
 * It's properties, methods and events are divided into multiple source files. They are compiled into a single class at compile time.
 * If a part of the class is sealed, the whole class becomes sealed.
 * Can not be inherited. 
 * All parts of the partial class must be prefixed with the partial keyword.
 
-###### Sealed classes
+### Sealed classes
 
 * Can not be inherited.
 * Access modifiers can not be applied.
 * To access the sealed members, an instance must be created. 
 
-###### Static classes
+### Static classes
 
 * Can have only static members.
 * Can not make instances from a static class. 
@@ -111,14 +111,14 @@
 
 ## 12. What are the differences between a Class and a Struct?
 
-###### Class
+### Class
 
 * Reference types of data, allocated on the heap and garbage-collected.
 * Reference can be `null` .
 * Two variables can contain a reference to the same object - one variable can be affected by another.
 * Can inherit from another class.
 
-###### Struct
+### Struct
 
 * Value types of data, allocated either on the stack or inline (in containing types).
 * Can not have a `null` reference (unless `Nullable` is used).
@@ -128,7 +128,7 @@
 * Members can not be `protected` or `protected internal` .
 * Can be instantiated without using `new` .
 
-###### Both struct and class
+### Both struct and class
 
 * Can contain methods and events. 
 * Can implement interfaces.
@@ -155,8 +155,18 @@
 
 ## 16. How is Exception Handling implemented in C#?
 
-> I can not answer it.
-> TODO
+* Exception occurs when a problem / error arises during the execution of the program.
+* Exception handling provides a way to transfer control from one part of the program to another.
+* In `C#` exception handling is represented by classes that mainly derived from `System.Exception` .
+* By using `try` , `catch` , `finally` blocks the core program is separated from the error-handling statement.
+* Structure:
+
+     - `try` - a block that checks the statement and activates it. It is followed by one or more `catch` blocks that handle it.
+     - `catch` - exception handler that catches the problem at the exact place in the program. This is the place where we decide what to do with the exception.
+     - `finally` - executes a set of statements no matter of an exception is caught or not.
+     - `throw` - the program creates a new exception then the problem occurs and throws it. We can trow an object if it is derived from the `System.Exception` class.
+
+* We can have user-defined exceptions that derived from the `Exception` class.
 
 ## 17. What are C# I/O classes? What are the commonly used I/O classes?
 
@@ -252,13 +262,13 @@
 
 ## 26. What is Parsing? What is Casting?
 
-###### Parsing
+### Parsing
 
 * Conversion of string that represents a base type to that type.
 * The reverse operation is formatting (converting a base type to its string representation).
 * Most commonly strings are converted to numeric values ( `Parse` and `TryParse` ) and DateTime objects. We can also parse strings that represent `Char` , `Boolean` and `Enum` into data types.
 
-###### Casting
+### Casting
 
 * Every data type has certain attributes such as the amount os memory space it takes, the range of possible values and the members that it makes available.
 * Casting is a type conversion that can be automatically supported by . NET Framework or custom type conversion.
