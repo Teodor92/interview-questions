@@ -332,8 +332,14 @@
 
 ## 32. What is a `Deadlock` ?
 
-> I can partially answer it.
-> TODO
+* A situation in the multi-threading programming that two or more threads are frozen in their execution because they are waiting for each other to finish. 
+* A *lock* is a shared object that can be Acquired by a Thread, and then Released. It is a way to synchronize between Threads. Usually a Lock is placed around a critical section when we want a single Thread at a time.
+* Deadlock occurs when:
+    - a limited number of a particular resource.
+    - the ability to hold one resource and request another.
+    - no preemption capability (using before the other thread). One thread can't force another thread to release a lock.
+    - a circular wait condition.
+* To avoid a Deadlock, the most common solutions are to use timeout value ( `System.Threading.Monitor` ), avoid unnecessary locks and avoid nested locks. 
 
 ## 33. What is a Race Condition?
 
