@@ -170,8 +170,19 @@
 
 ## 17. What are C# I/O classes? What are the commonly used I/O classes?
 
-> I can not answer it.
-> TODO
+* The `System.IO` namespace provides with methods that allow reading / writing to files and data streams, and some basic file and directory support.
+
+### Most common I/O classes
+
+* `Directory` - has static methods for creating and moving directories and subdirectories. The class can not be inherited.
+* `File` - has static methods for creating, copying, deletion, moving and opening of a single file.
+* `IOException` - the exception that is thrown then an I/O error occurs. 
+* `Path` - performs operations on `String` instances that contain file or directory path information.
+* `TextReader` - reader that reads a sequential series of characters.
+* `TextWriter` - writer that can write a sequential series of characters. The class is abstract.
+* `StreamReader` - implements `TextReader` that reads characters from a byte stream in a particular encoding.
+* `StreamWriter` - implements `TextWriter` for writing characters to a byte stream in a particular encoding.
+* `FileStream` - reading from, doing some operation (writing to) and closing the file.
 
 ## 18. What is a Destructor in C#?
 
