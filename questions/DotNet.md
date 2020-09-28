@@ -12,8 +12,16 @@
 
 ## 3. What is CoreCLR?
 
-> I can partially answer it.
-> TODO
+* `.NET Core` command-line interface (CoreCLR) is a tool for developing, building, running and publishing `.NET Core` applications.
+* Command structure is:
+
+     - the driver - `dotnet`
+     - command - example: `build` , `publish` , `new` , `run` , `test` , `add` , `remove` , etc.
+     - command arguments
+     - options
+
+* We can install tools that are installed from `NuGet` packages and are run by the command prompt. 
+* It is included in the `.NET Core SDK` .
 
 ## 4. What is JIT compiler?
 
