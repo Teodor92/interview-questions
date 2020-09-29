@@ -468,8 +468,17 @@
 
 ## 45. How do you inherit a class into other class in C#? Can you inherit multiple classes? What about interfaces?
 
-> I can answer it.
-> TODO
+* We can inherit from a class with the `:` symbol.
+* `C#` supports single inheritance only.
+* All types in the `.NET` type system inherit from `Object` .
+* If we don't want other classes to inherit from a class, we use `sealed` .
+* Not inherited from a class are:
+
+    - static constructors
+    - instance constructors
+    - finalizers - called by the runtime's garbage collector to destroy an instance
+
+* Interfaces solve the problem with the single class inheritance. Interfaces work as a contract between the instances that implement them and the declared functionalities. One class can implement many interfaces.
 
 ## 46. What is the base class in . NET from which all the classes are derived from?
 
