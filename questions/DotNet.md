@@ -59,8 +59,7 @@
 
 ## 9. What is an Interface?
 
-* An interface works as a contract 
-* Contains a declaration of functionalities. The entities that implement the interface must provide the implementation of that declarations. 
+* An interface works as a contract between between its functionalities and the functionalities of the entities that implement the interface.
 * An interface can contain declaration of methods, properties, indexers and events. Can not contain fields or implementations of methods. 
 * Interface members are public by default, can not apply access modifiers. 
 * A class or a struct can implement one or more interfaces. 
@@ -492,8 +491,9 @@
 
 ## 48. How can we set the class to be inherited, but prevent the method from being over-ridden?
 
-> I can not answer it.
-> TODO
+* If we want a method from the base class to be able to be overridden, we use `virtual` to declare it.
+* If a method is not virtual, then it can't be overridden in the derived class. So we just declare the method in the base class without `virtual` .
+* We can use `sealed override` in the derived class and prevent the method from further overriding in the following derived class.
 
 ## 49. How to use nullable types in . NET?
 
