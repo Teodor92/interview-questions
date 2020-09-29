@@ -312,7 +312,6 @@
 * Derived from `System.Delegate` class.
 * When the delegate is instantiated, we can associate its instance with any method with the same parameter list and return type.
 * Used for implementing events and call-back methods.
-
 * Delegate objects can be composed with the `+` operator.
 
 ``` csharp
@@ -335,8 +334,19 @@
 
 ## 30. What are generics? What is a Generic Class?
 
-> I can partially answer it.
-> TODO
+* Generics are classes, methods, structures, interfaces and methods that have placeholders (type parameters) that they store or use. 
+* The type is specified when the generic class is instantiated.
+* Generics are like templates - they provide generalization and reusability of classes and methods that don't have the specification of the data type until the class / method is declared.
+* Frequently used with collections and methods on them.
+* In `System.Collections.Generic` namespace are the most common generic-based collection methods.
+* We can create custom generic types and methods.
+
+``` csharp
+    public class GenericList<T>
+    {
+    public void Add(T input) { }
+    }
+```
 
 ## 31. What are `async` and `await` ?
 
