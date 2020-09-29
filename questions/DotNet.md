@@ -15,10 +15,10 @@
 * `.NET Core` command-line interface (CoreCLR) is a tool for developing, building, running and publishing `.NET Core` applications.
 * Command structure is:
 
-     - the driver - `dotnet`
-     - command - example: `build` , `publish` , `new` , `run` , `test` , `add` , `remove` , etc.
-     - command arguments
-     - options
+* the driver - `dotnet`
+* command - example: `build` , `publish` , `new` , `run` , `test` , `add` , `remove` , etc.
+* command arguments
+* options
 
 * We can install tools that are installed from `NuGet` packages and are run by the command prompt. 
 * It is included in the `.NET Core SDK` .
@@ -81,7 +81,7 @@
 * Can not create instances from an abstract class. 
 * Its methods can either have an implementation or no implementation.
 * Has only one subclass.
-* Methods inside abstract class can not fe private. 
+* Methods inside abstract class can not be private. 
 
 ### Partial classes
 
@@ -161,10 +161,10 @@
 * By using `try` , `catch` , `finally` blocks the core program is separated from the error-handling statement.
 * Structure:
 
-     - `try` - a block that checks the statement and activates it. It is followed by one or more `catch` blocks that handle it.
-     - `catch` - exception handler that catches the problem at the exact place in the program. This is the place where we decide what to do with the exception.
-     - `finally` - executes a set of statements no matter of an exception is caught or not.
-     - `throw` - the program creates a new exception then the problem occurs and throws it. We can trow an object if it is derived from the `System.Exception` class.
+* `try` - a block that checks the statement and activates it. It is followed by one or more `catch` blocks that handle it.
+* `catch` - exception handler that catches the problem at the exact place in the program. This is the place where we decide what to do with the exception.
+* `finally` - executes a set of statements no matter of an exception is caught or not.
+* `throw` - the program creates a new exception then the problem occurs and throws it. We can trow an object if it is derived from the `System.Exception` class.
 
 * We can have user-defined exceptions that derived from the `Exception` class.
 
@@ -294,21 +294,34 @@
 
 * Automatic type conversions:
 
-     - from a derived class to a base class. Instance of any class or structure can be converted to an `Object` instance.
-     - from a base class to the original derived class. Requires a casting operator.
-     - from a type that implements an interface to an interface object that represents that interface. 
-     - from an interface object back to the original type that implements that interface. Requires a casting operator.
+    - from a derived class to a base class. Instance of any class or structure can be converted to an `Object` instance.
+    - from a base class to the original derived class. Requires a casting operator.
+    - from a type that implements an interface to an interface object that represents that interface. 
+    - from an interface object back to the original type that implements that interface. Requires a casting operator.
 
 * Custom type conversions:
 
-     - `implicit` operator - widen conversions between types
-     - `explicit` operator - narrow conversions between types
-     - `IConvertible` interface, `Convert` class and `TypeConverter` class 
+    - `implicit` operator - widen conversions between types
+    - `explicit` operator - narrow conversions between types
+    - `IConvertible` interface, `Convert` class and `TypeConverter` class 
 
 ## 27. What is a Delegate?
 
-> I can not answer it.
-> TODO
+* Reference type variable that holds the reference to a method.
+* Used to pass methods as arguments to other methods (static or instance).
+* Derived from `System.Delegate` class.
+* When the delegate is instantiated, we can associate its instance with any method with the same parameter list and return type.
+* Used for implementing events and call-back methods.
+
+* Delegate objects can be composed with the `+` operator.
+
+``` csharp
+    public static void WriteToScreen(string str) {
+         Console.WriteLine("The String is: {0}", str);
+    }
+    public delegate void printString(string s); // declaration
+    printString firstString = new printString(WriteToScreen); // create delegate object
+```
 
 ## 28. What are Events?
 
