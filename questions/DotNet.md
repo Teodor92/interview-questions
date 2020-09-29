@@ -510,8 +510,17 @@
 
 ## 50. What is difference between "is" and "as" operators in c#?
 
-> I can not answer it.
-> TODO
+### `Is` operator
+
+* Used to check if the run-type of an object is compatible with a given type.
+* Boolean type and returns `true` if the object is the same and `false` if not.
+* Only for reference, boxing and unboxing conversions. 
+
+### `As` operator
+
+* Used to perform conversion between compatible reference types or Nullable types.
+* Returns the object if it is compatible with the given type or `null` if not.
+* Only for reference and boxing conversions. 
 
 ## 51. What are indexers?
 
