@@ -1,14 +1,38 @@
 # . NET Interview questions
 
-## 1. What is the . NET Core?
-
-> I can partially answer it.
-> TODO
-
 ## 2. What is difference between . NET Core and . NET Framework?
 
-> I can partially answer it.
-> TODO
+### `.NET Core`
+
+* Free and open-source managed software framework for Windows, Linux and macOS systems.
+* Cross-platform 
+* Fully supports languages like `C#` , `F#` , `Visual Basic .NET` (from `.NET Core 5.0` in the future).
+* Relies on `Package manager` to receive updates.
+
+* Two main components:
+    - `CoreCLR` - comparable to `CLR` (Common Language Runtime). `CoreCLR` is a complete runtime and virtual machine for managed execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
+    - `CoreFX` - comparable to `FCL` (Framework Class Library) foundation for `Standard Libraries` . `CoreFX` shares a subset of `.NET Framework` API-s and comes with it's own API-s that are not part of the `.NET Framework` . 
+
+* Supports:
+
+     - `ASP.NET Core` web apps
+     - command-line apps
+     - libraries
+     - UWP (Universal Windows Platform) apps
+     - from `.NET 3.0` - WPF, Windows Forms
+
+### `.NET Framework`
+
+* Windows-only version of `.NET` for building any type of desktop app that runs on Windows.
+* Includes a large class library called `FCL` (Framework Class Library).
+* Provides language interoperability across several programming languages.
+* Programs execute in software environment - `CLR` - application virtual machine. 
+* Relies on `Windows Update` to receive updates.
+
+* Two main components:
+
+     - `CLR` (Common Language Runtime) - virtual machine that manages the execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
+     - `FCL` (Framework Class Library) - provides user interface, data access, database connectivity, web application development, network communications. First implementation of `CLI` (Common Language Infrastructure).
 
 ## 3. What is CoreCLR?
 
