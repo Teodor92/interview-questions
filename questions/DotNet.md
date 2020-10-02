@@ -220,8 +220,26 @@
 
 ## 19. What are Boxing and Unboxing?
 
-> I can not answer it.
-> TODO
+### Boxing
+
+* The process of converting a value type to the `object` type.
+* CLR boxes a value type by wrapping the value inside a `System.Object` instance and stores it in the heap.
+* Boxing is implicit.
+
+``` csharp
+int number = 7;
+object obj = i;
+```
+
+### Unboxing
+
+* Extracting the value type from the object.
+* Unboxing is explicit. 
+
+``` csharp
+obj = 123;
+number = (int)obj;
+```
 
 ## 20. What is the difference between Continue and Break Statement?
 
