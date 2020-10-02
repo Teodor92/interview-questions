@@ -569,8 +569,94 @@
 
 ## 54. How to implement a singleton design pattern in C#? And what about a thread safe singleton?
 
-> I can not answer it.
-> TODO
+### Singleton pattern
+
+* A singleton is a class that allows only once instance of itself to be created.
+* Usually singletons don't allow any parameters to be specified when creating the instance.
+* They are created with a single constructor, which is private and parameterless.
+* This way the creation of subclasses is prevented.
+* Typically the instance is not created until needed.
+* The class is sealed (not necessary, but may help the JIT).
+* A static variable which holds a reference to the single created instance, if any.
+* A public static means of getting the reference to the single created instance, creating one if necessary.
+
+### Non-thread safe (bad example)
+
+``` csharp
+public sealed class Singleton
+    {
+    private static Singleton instance=null;
+
+    private Singleton()
+    {
+    }
+
+    public static Singleton Instance
+    {
+        get
+        {
+            if (instance==null)
+            {
+                instance = new Singleton();
+            }
+        return instance;
+        }
+    }
+}
+```
+
+### Simple thread safety
+
+``` csharp
+public sealed class Singleton
+{
+    private static Singleton instance = null;
+    private static readonly object padlock = new object();
+
+    Singleton()
+    {
+    }
+
+    public static Singleton Instance
+    {
+        get
+        {
+            lock (padlock)
+            {
+                if (instance == null)
+                {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        }
+    }
+}
+```
+
+### Thread safety - lazy
+
+``` csharp
+public sealed class Singleton
+{
+    private Singleton()
+    {
+    }
+
+    public static Singleton Instance { get { return Nested.instance; } }
+
+    private class Nested
+    {
+    // Explicit static constructor to tell C# compiler
+    // not to mark type as beforefieldinit
+        static Nested()
+        {
+        }
+
+        internal static readonly Singleton instance = new Singleton();
+    }
+}
+```
 
 ## 55. Explain `Finalize` vs `Dispose` usage?
 
