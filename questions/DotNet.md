@@ -227,8 +227,8 @@
 * Boxing is implicit.
 
 ``` csharp
-int number = 7;
-object obj = i;
+    int number = 7;
+    object obj = i;
 ```
 
 ### Unboxing
@@ -237,8 +237,8 @@ object obj = i;
 * Unboxing is explicit. 
 
 ``` csharp
-obj = 123;
-number = (int)obj;
+    obj = 123;
+    number = (int)obj;
 ```
 
 ## 20. What is the difference between Continue and Break Statement?
@@ -357,7 +357,7 @@ number = (int)obj;
 
 ``` csharp
     public static void WriteToScreen(string str) {
-         Console.WriteLine("The String is: {0}", str);
+        Console.WriteLine("The String is: {0}", str);
     }
     public delegate void printString(string s); // declaration
     printString firstString = new printString(WriteToScreen); // create delegate object
@@ -442,8 +442,17 @@ number = (int)obj;
 
 ## 37. What is the difference between static methods and instance methods?
 
-> I can answer it.
-> TODO
+### Static methods
+
+* Declared with `static` keyword.
+* Can be in static and non-static classes.
+* Can be called on static classes, or if the class is an instance class - on the class itself (not the instance).
+
+### Instance methods
+
+* Require an object of its class to be created before it can be called.
+* Has a class instance passed to it like an invisible: accessed by `this` .
+* Can apply the method only to instantiated objects, not the class itself.
 
 ## 38. What is a constructor?
 
