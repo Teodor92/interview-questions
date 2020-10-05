@@ -466,8 +466,22 @@
 
 ## 39. What is the difference between ref & out parameters?
 
-> I can partially answer it.
-> TODO
+### Ref
+
+* `Ref` is a keyword in `C#` . 
+* Used for passing the arguments by reference.
+* The parameters should be initialized before passed to ref.
+* The data may go both directions.
+* Useful when the calling method also need to change the value of passed parameter.
+
+### Out
+
+* `Out` is a keyword in `C#` . 
+* Used for passing the arguments to methods as a reference type.
+* Used when a method returns multiple values.
+* The value of the parameter have to be initialized before returning to the calling method.
+* The data only goes one direction.
+* Useful when a method return multiple values.
 
 ## 40. Can we use `this` command within a static method?
 
