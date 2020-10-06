@@ -395,8 +395,20 @@
 
 ## 31. What are `async` and `await` ?
 
-> I can partially answer it.
-> TODO
+### Asynchronous programming
+
+* Avoids activities that are potentially blocking and the application have to wait for them to finish.
+* In an asynchronous process, the application can continue other work while that task finishes.
+* Provides a way to improve responsiveness without bottlenecks.
+* The `TAP` (Task Asynchronous programming model) provides more abstraction to asynchronous programming.
+* Enables the code to start work and return a Task that represents the ongoing work.
+
+### Async & await
+
+* Asynchronous methods return a `Task<TResult>` or `Task` and are defined by the `async` modifier.
+* Then in the body of the method, the process has been started (usually method ending in `Async` ).
+* `Await` is an expression that marks a point where the method can't continue until the awaited asynchronous operation is finished.
+* That means when you `await` some process, the program continues to execute if that process is not in use. When the process is finished, the control resumes and 
 
 ## 32. What is a `Deadlock` ?
 
