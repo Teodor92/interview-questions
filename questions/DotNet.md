@@ -49,8 +49,12 @@
 
 ## 4. What is JIT compiler?
 
-> I can not answer it.
-> TODO
+* Just-in-time compiler is a part of `CLR` (Common Language Runtime) in `.NET` .
+* Firstly a language-specific compiler converts the source code to the common intermediate language ( `CIL` ).
+* Then the Just-in-time compiler converts that intermediate language to machine code.
+* Speeds up code execution and performance.
+* Provides support for multiple platforms.
+* Machine code is specific to the computer environment that the JIT runs on.
 
 ## 5. What is the difference between AppDomain, Assembly, Process, and a Thread?
 
@@ -594,8 +598,15 @@
 
 ## 52. What is difference between the `throw` and `throw ex` ?
 
-> I can not answer it.
-> TODO
+### Throw
+
+* Used to preserve the original error stack information.
+* Good practice to use it instead of `throw ex` .
+
+### Throw ex
+
+* Used to replace stack trace of exception with a stack trace starting at the re-throw point.
+* Used to intentionally hide stack trace information.
 
 ## 53. What are C# attributes and its significance?
 
