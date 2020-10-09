@@ -77,8 +77,30 @@
 
 ## 7. What are the fundamental OOP concepts? (The 4 pillars)
 
-> I can answer it.
-> TODO
+### Inheritance
+
+* Ability to `receive` methods and properties from an existing class
+* Ability to create a new class from a similar existing class.
+* A process of object reusability.
+
+### Polymorphism
+
+* Each class implements the same methods, but they can change in different ways methods to specific characteristics.
+* One function behaves in different ways in classes.
+* Many forms of the single object.
+* Static polymorphism (compile) - function overloading and operator overloading.
+* Dynamic polymorphism (runtime) - function overriding.
+
+### Abstraction
+
+* Hides unnecessary details from type consumers - giving abstract design.
+* Focus on what the object does rather that how it does it.
+
+### Encapsulation
+
+* Binds member function and data member into a single unit - class.
+* Enclosing related operations and data into an object.
+* Hiding the internal details for the object from the outside.
 
 ## 8. What is Managed and Unmanaged code?
 
