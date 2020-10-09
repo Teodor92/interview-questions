@@ -529,8 +529,19 @@
 
 ## 42. What are value types and reference types?
 
-> I can answer it.
-> TODO
+### Value types
+
+* Holds a data value within its own memory space - directly contains value.
+* Passing to other method: separate copy is created. So changing the one copy doesn't affect the other copy.
+* Value data types in `C#` : `bool` , `byte` , `char` , `decimal` , `double,`  `enum,`  `float` , `int` , `long` , `sbyte` , `short` , `struct` , `uint` , `ulong,`  `ushort` .
+
+### Reference types
+
+* Doesn't store the value directly, only the address it is being stored. 
+* The reference is the pointer to where the memory for the variable is being stored.
+* Passing to other method: passes the variable's address, not its copy. So if we change the value of one variable, it will also reflect in the calling method.
+* Reference data types in `C#` are: `string` , `array` , `class` , `delegate` .
+* Default value is `null` .
 
 ## 43. What is method overloading?
 
