@@ -82,8 +82,20 @@
 
 ## 8. What is Managed and Unmanaged code?
 
-> I can not answer it.
-> TODO
+### Managed code
+
+* Resource, which is within the application domain.
+* Code in `.NET framework` is managed and directly executed by `CLR` (no matter the language).
+* Any managed code is not compiled into machine code, but to Intermediate language code, compiled and executed by runtime.
+* `CLR` provides memory management, type safety, etc.
+* Faster that unmanaged code.
+
+### Unmanaged code
+
+* Code outside of `.NET framework` and do not run under the control of `CLR` .
+* Background compatibility with code of `VB` is an example of unmanaged code.
+* From the language-specific native compiler the code is wrapped (COM Callable Wrapper or Runtime Callable Wrapper) to executable code.
+* Languages like `C` / `C++` are unmanaged - they are loaded as binary to the memory by the operating system.
 
 ## 9. What is an Interface?
 
