@@ -616,8 +616,35 @@
 
 ## 51. What are indexers?
 
-> I can not answer it.
-> TODO
+* Allow instances of a class to be indexed line an array.
+* `This` keyword is used to define the indexer.
+* Can have more that one formal parameter, example: accessing a two-dimensional array.
+* Can be overloaded.
+
+``` csharp
+    class SampleCollection<T>
+    {
+    // Declare an array to store the data elements.
+        private T[] arr = new T[100];
+
+        // Define the indexer to allow client code to use [] notation.
+        public T this[int i]
+        {
+            get { return arr[i]; }
+            set { arr[i] = value; }
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            var stringCollection = new SampleCollection<string>();
+            stringCollection[0] = "Hello, World";
+            Console.WriteLine(stringCollection[0]);
+        }
+    }
+```
 
 ## 52. What is difference between the `throw` and `throw ex` ?
 
