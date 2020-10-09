@@ -403,8 +403,33 @@
 
 ## 28. What are Events?
 
-> I can not answer it.
-> TODO
+* User action or system generated notifications that the application needs to respond to.
+* Using delegates events are declared and raised in a class and associated with event handlers.
+* Events are the publisher-subscriber model in which:
+    - Publisher class - containing the event. Publisher is the object containing the definition of the event and the delegate. Determines when the event is raised.
+    - Subscriber class - accepts the event. Subscriber object is that accepts the event and provides an event handler. Determinate that action is taken in response to the event. One event can have many subscribers.
+
+``` csharp
+    // declare a delegate type for the event
+    public delegate string BoilerLogHandler(string str);
+ 
+    class EventProgram {
+        // declare the event
+        event MyDel MyEvent;
+        
+        public EventProgram() {
+            this.MyEvent += new MyDel(this.WelcomeUser);
+        }
+        public string WelcomeUser(string username) {
+            return "Welcome " + username;
+        }
+        static void Main(string[] args) {
+            EventProgram obj1 = new EventProgram();
+            string result = obj1.MyEvent("To Events");
+            Console.WriteLine(result);
+        }
+    }
+```
 
 ## 29. What is Reflection in C#?
 
