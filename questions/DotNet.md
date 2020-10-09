@@ -762,5 +762,16 @@ public sealed class Singleton
 
 ## 55. Explain `Finalize` vs `Dispose` usage?
 
-> I can not answer it.
-> TODO
+### Finalize
+
+* Called by the garbage collector when it reclaims an object.
+* Should release unmanaged resources only.
+* Execution is "non-deterministic" - we can not rely on another object still being available in Finalizers.
+* Not for value types.
+* Finalizers should be `protected` methods.
+
+### Dispose
+
+* Called by the application to release valuable native resources when they are no longer needed.
+* Execution is "deterministic" - after making a call to the `Disposable` method, the object is made unusable.
+* We should avoid creating disposable value types.
