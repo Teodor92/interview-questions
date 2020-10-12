@@ -482,8 +482,13 @@
 
 ## 33. What is a Race Condition?
 
-> I can not answer it.
-> TODO
+* Two (on more) threads access and try to change a single shared between them data at the same time.
+* Race condition is when the outcome of the program is affected because of timing.
+* Resources that are accessed and updated within multiple threads are Shared resources.
+* The problem is solved by using thread-synchronization techniques:
+    - Atomic Update - `.NET`  `Interlocked` class to carry all the operations in one single operation.
+    - Data Partitioning - partitioning data for multiple threads. This technique can not be used when one slice of data depends on the other slice. 
+    - Wait-Based Technique - a thread is safe until someone decides it's safe to proceed.  Used when the previous two techniques can not be adopted easily. `.NET` has Wait Based Primitives - `Monitor` , `Mutex` , `ReaderWriterLock` classes for that technique.
 
 ## 34. What is Serialization?
 
