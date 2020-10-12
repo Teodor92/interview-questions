@@ -524,8 +524,15 @@
 
 ## 34. What is Serialization?
 
-> I can partially answer it.
-> TODO
+* Process of converting an object into a stream of bytes to store it in memory, database or file.
+* Saves the state of object in order to recreate it later.
+* The reverse process is deserialization. 
+* The object is serialized into a stream (with information about the object - version, culture, assembly name) and is stored in the database, file or memory.
+* The serialized object can be:
+    - sent to a remote application by using a web service
+    - passed to another domain 
+    - passed through a firewall as a `JSON` or `XML` string
+    - maintaining security or user-specific information across applications
 
 ## 35. Can multiple catch blocks be executed?
 
