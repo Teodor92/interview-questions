@@ -461,8 +461,12 @@
 
 ## 29. What is Reflection in C#?
 
-> I can not answer it.
-> TODO
+* Allows an application to collect information about itself and also to manipulate on itself.
+* Reflection describes assemblies, modules, types, members, parameters - to access metadata.
+* `GetType` method returns the type of any variable.
+* Reflection is used to build new types at runtime, late binding and access methods or types at runtime.
+* If attributes are used, `Reflection` enables you to access them.
+* In `System.Reflection` namespace.
 
 ## 30. What are generics? What is a Generic Class?
 
