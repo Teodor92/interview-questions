@@ -58,8 +58,36 @@
 
 ## 5. What is the difference between AppDomain, Assembly, Process, and a Thread?
 
-> I can not answer it.
-> TODO
+### AppDomain
+
+* A class that represents an application domain - isolated environment where the application is executed.
+* Derived from `MarshalByRefObject` .
+
+### Assembly
+
+* Fundamental unit of deployment, version control, reuse, activation, scoping and security permissions.
+* Collection of types and addresses built to work together to form an executable (*.exe*) or a dynamic link library (*.dll*).
+* Provide the `CLR` with the necessary information to build a `.NET` application.
+* Assembly can be built from more that one source code files.
+* Loaded into memory if they are required.
+* We can obtain information about an assembly by using `Reflection` .
+
+### Process
+
+* A running application - from a small background task to big application.
+* `Process` class provides access to local or remote processes.
+* `Process` class can start, stop, control and monitor local system processes.
+* Every process has at least one thread created by `CLR` .
+* In `System.Diagnostics` namespace.
+* A process can create more threads associated with that process.
+
+### Thread
+
+* Independent execution path, able to run simultaneously with other threads.
+* Threads an be executed in the foreground or in the background (background thread does not keep a process running if all foreground threads have terminated).
+* Worker threads that are managed by `CLR` can be executed by `ThreadPool` class.
+* `Thread` class creates and controls a thread, sets its priority and gets it started.
+* In `System.Threading.Thread` namespace.
 
 ## 6. What is an Object and a Class?
 
