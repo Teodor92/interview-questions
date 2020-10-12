@@ -195,8 +195,11 @@
 
 ## 11. Explain code compilation in C#.
 
-> I can not answer it.
-> TODO
+* File that is complied with the `.NET` assembly (in any supported language).
+* Code will be compiled by the `C#` compiler to the `IL` (intermediate language) which saves it in `*.exe` or `*.dll` files.
+* After the `IL` code is generated, the `CLR` converts that native code into machine code (using the `JIT` compiler). `JIT` compiler runs `IL` code from `*.exe` or `*.dll` file into native code which instantly executes by the processor.
+* Compiler errors - found by the C# compiler and prevent your code from being compiled into a `*.exe` .
+* Runtime errors - occur if an issue is encountered while the program is running.
 
 ## 12. What are the differences between a Class and a Struct?
 
