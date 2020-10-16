@@ -34,9 +34,9 @@
      - `CLR` (Common Language Runtime) - virtual machine that manages the execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
      - `FCL` (Framework Class Library) - provides user interface, data access, database connectivity, web application development, network communications. First implementation of `CLI` (Common Language Infrastructure).
 
-## 3. What is CoreCLR?
+## 3. What is CoreCLI?
 
-* `.NET Core` command-line interface (CoreCLR) is a tool for developing, building, running and publishing `.NET Core` applications.
+* `.NET Core` command-line interface (CoreCLI) is a tool for developing, building, running and publishing `.NET Core` applications.
 * Command structure is:
 
 * the driver - `dotnet`
@@ -196,8 +196,8 @@
 ## 11. Explain code compilation in C#.
 
 * File that is complied with the `.NET` assembly (in any supported language).
-* Code will be compiled by the `C#` compiler to the `IL` (intermediate language) which saves it in `*.exe` or `*.dll` files.
-* After the `IL` code is generated, the `CLR` converts that native code into machine code (using the `JIT` compiler). `JIT` compiler runs `IL` code from `*.exe` or `*.dll` file into native code which instantly executes by the processor.
+* Code will be compiled by the `C#` compiler to the `CIL` (intermediate language) which saves it in `*.exe` or `*.dll` files.
+* After the `CIL` code is generated, the `CLR` converts that native code into machine code (using the `JIT` compiler). `JIT` compiler runs `CIL` code from `*.exe` or `*.dll` file into native code which instantly executes by the processor.
 * Compiler errors - found by the C# compiler and prevent your code from being compiled into a `*.exe` .
 * Runtime errors - occur if an issue is encountered while the program is running.
 
@@ -767,7 +767,7 @@
 ## 53. What are C# attributes and its significance?
 
 * Adds information and metadata about some entity in code. 
-* Part of `.Net Framework` .
+* Part of `.Net` .
 * We can apply one or more attributes to assemblies, modules, classes and properties. 
 * Attributes can accept arguments just like methods.
 * Attributes are used surrounded by square brackets ([]) above the entity they describe. 
@@ -807,7 +807,7 @@ public sealed class Singleton
             {
                 instance = new Singleton();
             }
-        return instance;
+            return instance;
         }
     }
 }
@@ -838,30 +838,6 @@ public sealed class Singleton
                 return instance;
             }
         }
-    }
-}
-```
-
-### Thread safety - lazy
-
-``` csharp
-public sealed class Singleton
-{
-    private Singleton()
-    {
-    }
-
-    public static Singleton Instance { get { return Nested.instance; } }
-
-    private class Nested
-    {
-    // Explicit static constructor to tell C# compiler
-    // not to mark type as beforefieldinit
-        static Nested()
-        {
-        }
-
-        internal static readonly Singleton instance = new Singleton();
     }
 }
 ```
