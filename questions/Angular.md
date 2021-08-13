@@ -2,9 +2,6 @@
 
 ## 1. What are the building blocks of Angular?
 
-| Level | Easy |
-| ----- | ---- |
-
 > - Modules
 > - Components
 > - Templates
@@ -17,9 +14,6 @@
 
 ## 2. What is the difference between one-way data flow and two-way data - binding?
 
-| Level | Easy |
-| ----- | ---- |
-
 > Two way data binding means that UI fields are bound to model data dynamically such that when a UI field changes, the model data changes with it and vice-versa.
 > One way data flow means that the model is the single source of truth.
 Changes in the UI trigger messages that signal user intent to the model (or “store” in React). Only the model has the access to change the app’s state.
@@ -29,23 +23,14 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 
 ## 3. What is the differentiate between Components and Directives?
 
-| Level | Easy |
-| ----- | ---- |
-
 > Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element.
 
 ## 4. What is the use of the `@Input` and `@Output` directives?
-
-| Level | Easy |
-| ----- | ---- |
 
 > When it comes to the communication of Angular Components, which are in Parent-Child Relationship; we use @Input in Child Component when we are passing data from Parent to Child Component.
 > @Output is used in Child Component to receive an event from Child to Parent Component.
 
 ## 5. What are the Angular life-cycle hooks?
-
-| Level | Easy |
-| ----- | ---- |
 
 > - `ngOnChanges()` - Respond when Angular (re)sets data-bound input properties. The method receives a SimpleChanges object of current and previous property values.
 > Called before `ngOnInit()` and whenever one or more data-bound input properties change.
@@ -59,17 +44,11 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 
 ## 6. What is ng-content Directive?
 
-| Level | Medium |
-| ----- | ------ |
-
 > The HTML elements like p (paragraph) or h1 (heading) have some content between the tags. For example, `<p>this is a paragraph</p>` and `<h1>this is a heading</h1>`.
 > Now, similar to this, what if we want to have some custom text or content between the angular tags like  `<app-tax>some tax-related content</app-tax>` This will not work the way it worked for HTML elements.
 > Now, in such cases, the `<ng-content>` tag directive is used.
 
 ## 7. What is ViewEncapsulation?
-
-| Level | Easy |
-| ----- | ---- |
 
 > ViewEncapsulation decides whether the styles defined in a component can affect the entire application or not. There are three ways to do this in Angular:
 > - `Emulated`: styles from other HTML spread to the component.
@@ -78,16 +57,10 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 
 ## 8. What are the differences between Observables and Promises?
 
-| Level | Easy |
-| ----- | --- |
-
 > - Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place.
 > - Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event.
 
 ## 9. Why do you like Angular?
-
-| Level | Easy |
-| ----- | ---- |
 
 > - This is a very subjective one and there is no right answer to this :)
 
@@ -97,15 +70,9 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 @HostBinding('class.valid') isValid;
 ```
 
-| Level | Medium |
-| ----- | ------ |
-
 > Binds a host element property (here, the CSS class valid) to a directive/component property (isValid).
 
 ## 11. What is the difference between a smart/container/parent component and dumb/presentational/prue component? What is a good use case example? What are the advantages?
-
-| Level | Easy |
-| ----- | ---- |
 
 > A Dumb Component is a component that works like a pure function.
 (A pure function is a function that for given function arguments, will always produce the same return value.)
@@ -122,18 +89,12 @@ issues an API call; or changes the stored data in LocalStorage.
 
 ## 12. How do components communicate with each other?
 
-| Level | Easy |
-| ----- | ---- |
-
 > Types of communication:
 > - Parent/child communication using @Input decorator and @Output decorator with EventEmitter.
 > - Communication using services and Angular dependency injection system.
 > - Communication via store (redux) which also uses Angular DI.
 
 ## 12. What is the difference between an observable and a promise?
-
-| Level | Medium |
-| ----- | ------ |
 
 > A Promise handles a single event when an async operation completes or fails.
 Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
@@ -150,15 +111,9 @@ You can utilize the same API in each case.
 
 ## 13. What is virtual DOM?
 
-| Level | Medium |
-| ----- | ------ |
-
 > Virtual DOM is about avoiding unnecessary changes to the DOM, which are expensive performance-wise, because changes to the DOM usually cause re-rendering of the page. Virtual DOM also allows to collect several changes to be applied at once, so not every single change causes a re-render, but instead re-rendering only happens once after a set of changes was applied to the DOM.
 
 ## 14. What is Shadow DOM?
-
-| Level | Medium |
-| ----- | ------ |
 
 > Shadow dom is mostly about encapsulation of the implementation.
 > A single custom element can implement more-or-less complex logic combined with more-or-less complex DOM. An entire web application of arbitrary complexity can be added to a page by an import and `<my-app></my-app>` but also simpler reusable and composable components can be implemented as custom elements where the internal representation is hidden in the shadow DOM like `<date-picker></date-picker>`.

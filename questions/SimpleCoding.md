@@ -2,9 +2,6 @@
 
 ## 1. Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 
-| Level | Easy |
-| ----- | --- |
-
 > - Asks question about charset/encoding. And use info for quick exit condition.
 > - Use a map.
 > - Use search based approach.
@@ -12,17 +9,11 @@
 
 ## 2. Create a function that by a given object, key name and key value - returns a new object with the updated values for the specific key.
 
-| Level | Easy |
-| ----- | --- |
-
 > - Duplicated keys?
 > - Object in updated key?
 > - Mutable vs immutable approach?
 
 ## 3. Given two strings, write a method to decide if one is a permutation of the other.
-
-| Level | Easy |
-| ----- | --- |
 
 > - If different lengths - no permutation.
 > - Is it case insensitive?
@@ -31,29 +22,17 @@
 
 ## 4. Create a comma separated string from all the properties of an object.
 
-| Level | Easy |
-| ----- | --- |
-
 ## 5. Find the average of an array of numbers.
-
-| Level | Easy |
-| ----- | --- |
 
 ## 6. Flatten a 2D array.
 
 Example input: `[[1,2],[3,4]]`
 Example output: `[1,2,3,4]`
 
-| Level | Easy |
-| ----- | --- |
-
 ## 7. Flatten an N-D array.
 
 Example input: `[[1,[2],[3,[4]]`
 Example output: `[1,2,3,4]`
-
-| Level | Medium |
-| ----- | --- |
 
 ## 8. Find the path to a property in an object.
 

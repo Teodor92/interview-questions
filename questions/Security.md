@@ -2,23 +2,11 @@
 
 ## 1. What is SQL injection?
 
-| Level | Easy |
-| ----- | --- |
-
 ## 2. What is XSS?
-
-| Level | Easy |
-| ----- | --- |
 
 ## 3. How can you stop your DBA from making off with a list of your users’ passwords?
 
-| Level | Easy |
-| ----- | --- |
-
 ## 4. What is Cross-Site Request Forgery (CSRF)?
-
-| Level | Easy |
-| ----- | --- |
 
 > Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated. CSRF attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request.
 > With a little help of social engineering (such as sending a link via email or chat), an attacker may trick the users of a web application into executing actions of the attacker's choosing.
@@ -26,10 +14,4 @@
 
 ## 5. What is parameter tampering?
 
-| Level | Easy |
-| ----- | --- |
-
 ## 6. What is a DoS attack? And what is a DDoS attack?
-
-| Level | Easy |
-| ----- | --- |

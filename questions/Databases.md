@@ -2,9 +2,6 @@
 
 ## 1. What are the advantages of Normalization versus denormalization?
 
-| Level | Medium |
-| ----- | --- |
-
 > Normalization is better for OLTP (On-line Transaction Processing) systems:
 > - Quick updates – data is in one place, no duplication
 > - Quick inserts - data is in one place, no duplication
@@ -14,24 +11,15 @@
 
 ## 2. What is BASE?
 
-| Level | Medium |
-| ----- | --- |
-
 > - **B**asic **A**vailability - The database appears to work most of the time.
 > - **S**oft-state - Stores don’t have to be write-consistent, nor do different replicas have to be mutually consistent all the time.
 > - **E**ventual consistency - Stores exhibit consistency at some later point (e.g., lazily at read time).
 
 ## 3. What does the CAP theorem state?
 
-| Level | Hard |
-| ----- | --- |
-
 > TODO:
 
 ## 4. - What is ACID?
-
-| Level | Easy |
-| ----- | --- |
 
 > - **A**tomicity - either all of the pieces of information are committed or none are
 > - **C**onsistency - A transaction either creates a new and valid state of data, or returns all data to its state before the transaction was started.
@@ -40,9 +28,6 @@
 
 ## 5. What are the differences between clustered and non-clustered indices?
 
-| Level | Medium |
-| ----- | --- |
-
 > - With a clustered index the rows are **stored physically** on the disk in the same order as the index. There can therefore be only one clustered index.
 > - With a non-clustered index there is a **second list that has pointers to the physical rows**. You can have many non-clustered indexes, although each new index will increase the time it takes to write new records.
 > - It is generally **faster to read from a clustered index** if you want to get back all the columns. You do not have to go first to the index and then to the table.
@@ -50,17 +35,11 @@
 
 ## 6. What are the differences between primary keys and unique indexes?
 
-| Level | Easy |
-| ----- | --- |
-
 > - A **primary key also implies NOT NULL**, but a unique index can be nullable.
 > - There can be **only one primary key**, but there can be multiple unique indexes.
 > - If there is **no clustered index defined, then the primary key will be the clustered index**.
 
 ## 7. What are dirty reads, non-repeatable reads and phantom reads?
-
-| Level | Easy |
-| ----- | --- |
 
 > - **Dirty Reads** - A dirty read occurs when a transaction reads data that has not yet been committed. For example, suppose transaction 1 updates a row. Transaction 2 reads the updated row before transaction 1 commits the update. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.
 > - **Non-repeatable** - Reads A non-repeatable read occurs when a transaction reads the same row twice but gets different data each time. For example, suppose transaction 1 reads a row. Transaction 2 updates or deletes that row and commits the update or delete. If transaction 1 rereads the row, it retrieves different row values or discovers that the row has been deleted.
@@ -68,9 +47,6 @@
 > Transaction 2 generates a new row (through either an update or an insert) that matches the search criteria for transaction 1. If transaction 1 reexecutes the statement that reads the rows, it gets a different set of rows.
 
 ## 8. What are the transaction isolation levels?
-
-| Level | Easy |
-| ----- | --- |
 
 > - **Read Uncommitted** – Read Uncommitted is the lowest isolation level. In this level, one transaction may read not yet commited changes made by other transaction, thereby allowing dirty reads. In this level, transactions are not isolated from each other.
 > - **Read Committed** (default for MSSQL, PostgreSQL) – This isolation level guarantees that any data read is committed at the moment it is read. Thus it does not allows dirty read. The transaction hold a read or write lock on the current row, and thus prevent other rows from reading, updating or deleting it.
@@ -86,15 +62,9 @@
 
 ## 9. What is a SQL injection?
 
-| Level | Easy |
-| ----- | --- |
-
 > A type of an injection attack where the attacker executes a malicious batch of SQL inside our database server.
 
 ## 10. How can we protect ourselves from a SQL injection?
-
-| Level | Easy |
-| ----- | --- |
 
 > - NEVER, EVER execute a raw SQL query
 > - Sanitize your query manually (But srly, we are not in the 90s – use something else).
@@ -103,81 +73,45 @@
 
 ## 11. What are the different types of joins?
 
-| Level | Easy |
-| ----- | --- |
-
 ![alt text](../assets/join-types.jpg)
 
 ## 12. What is `COALESCE`?
-
-| Level | Easy |
-| ----- | --- |
 
 > `COALESCE` will take any number of parameters, and return the first value encountered that isn't `NULL`.
 
 ## 13. What is the difference between `DELETE` and `TRUNCATE`?
 
-| Level | Easy |
-| ----- | --- |
-
 > TODO:
 
 ## 14. What does UNION do? What is the difference between UNION and UNION ALL?
 
-| Level | Medium |
-| ----- | --- |
-
 ## 15. What is the difference between the WHERE and HAVING clauses?
-
-| Level | Easy |
-| ----- | --- |
 
 ## 16. What are the difference between stored procedures and user defined functions?
 
-| Level | Easy |
-| ----- | --- |
-
 ## 17. What is the difference between "stored procedure" and "dynamic SQL"?
-
-| Level | Easy |
-| ----- | --- |
 
 > - Stored procedures are stored in data base in complied form.
 > - Dynamic SQL statements are dynamically constructed at run time.
 
 ## 18. What's the difference between CREATE PROC and CREATE PROCEDURE?
 
-| Level | Easy |
-| ----- | --- |
-
 > They are the same.
 
 ## 19. Can we call trigger inside a stored procedure?
-
-| Level | Easy |
-| ----- | --- |
 
 > No, triggers cannot be called manually.
 
 ## 20. What are CLR stored procedures?
 
-| Level | Medium |
-| ----- | --- |
-
 > Stored procedures written in a CLR compatible language like C#, VB.NET (How about no.), F#, etc.
 
 ## 21. When to use CLR stored procedures and when T-SQL ones?
-
-| Level | Medium |
-| ----- | --- |
 
 > - If your logic mostly includes transformations of massive sets of data, which can be performed using set operations, then use T-SQL.
 > - If your logic mostly includes complex computations of relatively small amounts of data, use CLR.
 
 ## 22. What is the best approach to check if a query has returned a result?
-
-| Level | Medium |
-| ----- | --- |
 
 > - It’s generally a better idea to use the `EXISTS` function over the `COUNT`.
 > - `EXIST` is a short circuiting operator, meaning it stops execution of the query after a single result is fount.
@@ -185,26 +119,17 @@
 
 ## 23. Correlated subqueries vs uncorrelated subqueries?
 
-| Level | Medium |
-| ----- | --- |
-
 > - Correlated Subquery is a sub-query that uses values from the outer query. In this case the inner query has to be executed for every row of outer query.
 > - Simple subquery doesn't use values from the outer query and is being calculated only once.
 > - Use uncorrelated subqueries when possible – better performance.
 
 ## 24. What is parameter sniffing?
 
-| Level | Hard |
-| ----- | --- |
-
 > - During compilation, the value passed as the store procedure parameter is evaluated and used to create an execution plan.
 > - That value is also stored with the execution plan in the plan cache.
 > - Future executions of the plan will re-use the plan that was compiled with that reference value.
 
 ## 25. How can we optimize incorrect parameter sniffing?
-
-| Level | Hard |
-| ----- | --- |
 
 > - Recompiling
 
@@ -247,9 +172,6 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 26. What the logarithmic complexity if the different query operations?
 
-| Level | Hard |
-| ----- | --- |
-
 > - Clustered Index Scan – O(n)
 > - Index Scan – O(n)
 > - Index Seek – O(log(n))
@@ -260,9 +182,6 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 27. Can you name some optimization tips?
 
-| Level | Hard |
-| ----- | --- |
-
 > - Use appropriate Indices (clustered, non-clustered)
 > - Inspect your WHERE clauses, when performance is an issue
 > - Denormalizaton vs many joins?
@@ -272,10 +191,4 @@ OPTION (OPTIMIZE FOR UNKNOWN)
 
 ## 28. What are some alternate ways to store data other than a relational database? Why would you do that, and what are the trade-offs?
 
-| Level | Medium |
-| ----- | --- |
-
 ## 29. If your database was under a lot of strain, what are the first few things you might consider to speed it up?
-
-| Level | Medium |
-| ----- | --- |
