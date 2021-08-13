@@ -17,6 +17,7 @@ A collection of interview questions for various languages, technologies and conc
 - [SystemDesign](./questions/SystemDesign.md)
 - [TypeScript](./questions/TypeScript.md)
 - [Web](./questions/Web.md)
+- [GoLang](./questions/GoLang.md)
 
 ## Question level
 

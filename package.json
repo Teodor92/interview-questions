@@ -22,14 +22,14 @@
     "author": "Teodor Kurtev",
     "license": "MIT",
     "devDependencies": {
-        "@commitlint/cli": "11.0.0",
-        "@commitlint/config-conventional": "11.0.0",
+        "@commitlint/cli": "13.1.0",
+        "@commitlint/config-conventional": "13.1.0",
         "@strictr/markdown-lint-config": "^1.3.5",
         "cz-conventional-changelog": "3.3.0",
         "husky": "4.3.0",
-        "markdownlint": "0.20.4",
-        "markdownlint-cli": "0.23.2",
-        "standard-version": "9.0.0"
+        "markdownlint": "0.23.1",
+        "markdownlint-cli": "0.28.1",
+        "standard-version": "9.3.1"
     },
     "config": {
         "commitizen": {

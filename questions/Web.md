@@ -12,10 +12,14 @@
 
 TODO:
 
-## 3. What is cookie? How does it work?
+## 3. What are cookies? How does it work?
 
-TODO:
+> Best answer ever! - [https://stackoverflow.com/a/48654382/2109394](https://stackoverflow.com/a/48654382/2109394)
 
-## 4. Which are the 5 groups of HTTP codes?
+## 4. Which are the 5 groups of HTTP codes? What do we use them for?
 
-TODO:
+> - Informational responses (100 – 199)
+> - Successful responses (200 – 299)
+> - Redirects (300 – 399)
+> - Client errors (400 – 499)
+> - Server errors (500 – 599)
