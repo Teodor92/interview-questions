@@ -18,7 +18,3 @@ A collection of interview questions for various languages, technologies and conc
 - [TypeScript](./questions/TypeScript.md)
 - [Web](./questions/Web.md)
 - [GoLang](./questions/GoLang.md)
-
-## Question level
-
-Bare in mind that the question level is very subjective. Some of the questions are open edded, meaning that it is up to the interviewer to see how much depth the interviee can put into their answer.

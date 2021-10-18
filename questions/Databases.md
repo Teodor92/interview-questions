@@ -81,7 +81,25 @@
 
 ## 13. What is the difference between `DELETE` and `TRUNCATE`?
 
-> TODO:
+### `DELETE`
+
+- `DELETE` is a DML Command.
+- `DELETE` statement is executed using a row lock, each row in the table is locked for deletion.
+- We can specify filters in where clause
+- It deletes specified data if where condition exists.
+- Delete activates a trigger because the operation are logged individually.
+- Slower than truncate because, it keeps logs.
+- Rollback is possible.
+
+### `TRUNCATE`
+
+- `TRUNCATE` is a DDL command.
+- `TRUNCATE TABLE` always locks the table and page but not each row.
+- Cannot use Where Condition.
+- It Removes all the data.
+- `TRUNCATE TABLE` cannot activate a trigger because the operation does not log individual row deletions.
+- Faster in performance wise, because it doesn't keep any logs.
+- Rollback is not possible.
 
 ## 14. What does UNION do? What is the difference between UNION and UNION ALL?
 
