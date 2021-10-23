@@ -103,13 +103,30 @@
 
 ## 14. What does UNION do? What is the difference between UNION and UNION ALL?
 
+> The basic difference between UNION and UNION ALL is union operation eliminates the duplicated rows from the result set but union all returns all rows after joining.
+
 ## 15. What is the difference between the WHERE and HAVING clauses?
+
+> `HAVING` is used to check conditions after the aggregation takes place.
+
+> `WHERE` is used to check conditions before the aggregation takes place.
 
 ## 16. What are the difference between stored procedures and user defined functions?
 
+>- Procedure can return zero or n values whereas function can return one value which is >mandatory.
+>- Procedures can have input/output parameters for it whereas functions can have only input >parameters.
+>- Procedure allows select as well as DML statement in it whereas function allows only >select statement in it.
+>- Functions can be called from procedure whereas procedures cannot be called from function.
+>- Exception can be handled by try-catch block in a procedure whereas try-catch block >cannot be used in a function.
+>- We can go for transaction management in procedure whereas we can't go in function.
+>- Procedures can not be utilized in a select statement whereas function can be embedded in >a select statement.
+>- UDF can be used in the SQL statements anywhere in the WHERE/HAVING/SELECT section where as Stored procedures cannot be.
+>- UDFs that return tables can be treated as another rowset. This can be used in JOINs with other tables.
+>- Inline UDF's can be though of as views that take parameters and can be used in JOINs and other Rowset operations.
+
 ## 17. What is the difference between "stored procedure" and "dynamic SQL"?
 
-> - Stored procedures are stored in data base in complied form.
+> - Stored procedures are stored in database in complied form.
 > - Dynamic SQL statements are dynamically constructed at run time.
 
 ## 18. What's the difference between CREATE PROC and CREATE PROCEDURE?
