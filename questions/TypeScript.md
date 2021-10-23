@@ -36,6 +36,48 @@
 
 > Not in a native way, but you can have a single implementation with multiple signatures.
 
-## 11. What is an union type?
+## 11. What is an union, discriminated unions and intersection types?
 
 > A mix of multiple types using the `|` or `&` operators.
+> - Using the `&` creates a new type type holds **all the common properties** between type A and type B.
+> - Using the `|` creates a new type that holds **all the properties** for both type A and type B.
+
+## 12. What is type inference?
+
+> Ability to infer the type from the existing code. There are 2 strategies:
+> - Best common type.
+> - Contextual typing.
+
+> For more information: [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+
+## 13. What are mapped types?
+
+> TODO: [Mapped types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
+
+## 14. What are Template Literal Types?
+
+> TOOD:
+
+## 15. What are Index Accessed Types?
+
+> TOOD:
+
+## 16. What are Conditional Types?
+
+> TOOD:
+
+## 17. What are Recursive types?
+
+> TOOD:
+
+## 18. What are Conditional Types and Conditional Recursive Types?
+
+> TOOD:
+
+## 19. What is Type Narrowing?
+
+> TOOD:
+
+## 20. What is the `in` operator?
+
+> TOOD:
