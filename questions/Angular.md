@@ -56,7 +56,18 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 > - `None`: styles defined in a component are visible to all components.
 
 ## 8. What are the differences between Observables and Promises?
+> A Promise handles a single event when an async operation completes or fails.
+Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
 
+> An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
+Often Observable is preferred over Promise because it provides the features of Promise and more. With Observable it doesn't matter if you want to handle 0, 1, or multiple events.
+You can utilize the same API in each case.
+>
+> - Observable also has the advantage over Promise to be cancelable.
+> If the result of an HTTP request to a server or some other expensive async operation isn't needed anymore, the Subscription of an Observable allows to cancel the subscription.
+> A Promise will eventually call the success or failed callback even when you don't need the notification or the result it provides anymore.
+> - Observable provides operators like map, forEach, reduce, ... similar to an array
+> - There are also powerful operators like retry(), or replay(), ... that are often quite handy.
 > - Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place.
 > - Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event.
 
@@ -93,21 +104,6 @@ issues an API call; or changes the stored data in LocalStorage.
 > - Parent/child communication using @Input decorator and @Output decorator with EventEmitter.
 > - Communication using services and Angular dependency injection system.
 > - Communication via store (redux) which also uses Angular DI.
-
-## 12. What is the difference between an observable and a promise?
-
-> A Promise handles a single event when an async operation completes or fails.
-Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
-
-> An Observable is like a Stream (in many languages) and allows to pass zero or more events where the callback is called for each event.
-Often Observable is preferred over Promise because it provides the features of Promise and more. With Observable it doesn't matter if you want to handle 0, 1, or multiple events.
-You can utilize the same API in each case.
->
-> - Observable also has the advantage over Promise to be cancelable.
-> If the result of an HTTP request to a server or some other expensive async operation isn't needed anymore, the Subscription of an Observable allows to cancel the subscription.
-> A Promise will eventually call the success or failed callback even when you don't need the notification or the result it provides anymore.
-> - Observable provides operators like map, forEach, reduce, ... similar to an array
-> - There are also powerful operators like retry(), or replay(), ... that are often quite handy.
 
 ## 13. What is virtual DOM?
 
