@@ -72,7 +72,7 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 
 > Binds a host element property (here, the CSS class valid) to a directive/component property (isValid).
 
-## 11. What is the difference between a smart/container/parent component and dumb/presentational/prue component? What is a good use case example? What are the advantages?
+## 11. What is the difference between a smart/container/parent component and dumb/presentational/pure component? What is a good use case example? What are the advantages?
 
 > A Dumb Component is a component that works like a pure function.
 (A pure function is a function that for given function arguments, will always produce the same return value.)
