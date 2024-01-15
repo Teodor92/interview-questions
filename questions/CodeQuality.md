@@ -14,7 +14,7 @@ Cyclomatic complexity measures the number of times you must execute a block of c
 
 ## 4. You have just been put in charge of a legacy code project with maintainability problems. What kind of things would you look to improve to get the project on a stable footing?
 
-## 5. Explain the concept of convention over configuration, and talk about an example of convention over configuration you have seen in the wild.
+## 5. Explain the concept of convention over configuration, and talk about an example of convention over configuration you have seen in the wild
 
 ## 6. What is an idempotent operation?
 
@@ -30,15 +30,15 @@ Cyclomatic complexity measures the number of times you must execute a block of c
 
 ## 10. What Source Control systems have you worked with?
 
-## 11. Describe a software development life cycle.
+## 11. Describe a software development life cycle
 
 ## 12. How do you react to people criticizing your code/documents?
 
-## 13. Explain the differences between stateless and stateful systems, and impacts of state on parallelism.
+## 13. Explain the differences between stateless and stateful systems, and impacts of state on parallelism
 
-## 14. Discuss the concept of YAGNI and explain something you did recently that adhered to this practice.
+## 14. Discuss the concept of YAGNI and explain something you did recently that adhered to this practice
 
-## 15. What is Refactoring ? Have you used it and it is important? Name three common refactorings.
+## 15. What is Refactoring ? Have you used it and it is important? Name three common refactorings
 
 ## 16. What value do daily builds, automated testing, and peer reviews add to a project? What disadvantages are there?
 

@@ -56,6 +56,7 @@ Changes in the UI trigger messages that signal user intent to the model (or “s
 > - `None`: styles defined in a component are visible to all components.
 
 ## 8. What are the differences between Observables and Promises?
+
 > A Promise handles a single event when an async operation completes or fails.
 Note: There are Promise libraries out there that support cancellation, but ES6 Promise doesn't so far.
 

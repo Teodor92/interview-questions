@@ -10,16 +10,16 @@
 - Relies on `Package manager` to receive updates.
 
 - Two main components:
-    - `CoreCLR` - comparable to `CLR` (Common Language Runtime). `CoreCLR` is a complete runtime and virtual machine for managed execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
-    - `CoreFX` - comparable to `FCL` (Framework Class Library) foundation for `Standard Libraries` . `CoreFX` shares a subset of `.NET Framework` API-s and comes with it's own API-s that are not part of the `.NET Framework` .
+  - `CoreCLR` - comparable to `CLR` (Common Language Runtime). `CoreCLR` is a complete runtime and virtual machine for managed execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
+  - `CoreFX` - comparable to `FCL` (Framework Class Library) foundation for `Standard Libraries` . `CoreFX` shares a subset of `.NET Framework` API-s and comes with it's own API-s that are not part of the `.NET Framework` .
 
 - Supports:
 
-    - `ASP.NET Core` web apps
-    - command-line apps
-    - libraries
-    - UWP (Universal Windows Platform) apps
-    - from `.NET 3.0` - WPF, Windows Forms
+  - `ASP.NET Core` web apps
+  - command-line apps
+  - libraries
+  - UWP (Universal Windows Platform) apps
+  - from `.NET 3.0` - WPF, Windows Forms
 
 ### `.NET Framework`
 
@@ -31,8 +31,8 @@
 
 - Two main components:
 
-    - `CLR` (Common Language Runtime) - virtual machine that manages the execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
-    - `FCL` (Framework Class Library) - provides user interface, data access, database connectivity, web application development, network communications. First implementation of `CLI` (Common Language Infrastructure).
+  - `CLR` (Common Language Runtime) - virtual machine that manages the execution of `.NET` programs and includes just-in-time compiler `RyuJIT` .
+  - `FCL` (Framework Class Library) - provides user interface, data access, database connectivity, web application development, network communications. First implementation of `CLI` (Common Language Infrastructure).
 
 ## 3. What is CoreCLI?
 
@@ -193,7 +193,7 @@
 - Only a static constructor can be declared.
 - Methods are called by using the class name, because an instance can not be created.
 
-## 11. Explain code compilation in C#.
+## 11. Explain code compilation in CSharp
 
 - File that is complied with the `.NET` assembly (in any supported language).
 - Code will be compiled by the `C#` compiler to the `CIL` (intermediate language) which saves it in `*.exe` or `*.dll` files.
@@ -203,14 +203,14 @@
 
 ## 12. What are the differences between a Class and a Struct?
 
-### Class
+### Classes
 
 - Reference types of data, allocated on the heap and garbage-collected.
 - Reference can be `null` .
 - Two variables can contain a reference to the same object - one variable can be affected by another.
 - Can inherit from another class.
 
-### Struct
+### Structs
 
 - Value types of data, allocated either on the stack or inline (in containing types).
 - Can not have a `null` reference (unless `Nullable` is used).
@@ -404,16 +404,16 @@
 
 - Automatic type conversions:
 
-    - from a derived class to a base class. Instance of any class or structure can be converted to an `Object` instance.
-    - from a base class to the original derived class. Requires a casting operator.
-    - from a type that implements an interface to an interface object that represents that interface.
-    - from an interface object back to the original type that implements that interface. Requires a casting operator.
+  - from a derived class to a base class. Instance of any class or structure can be converted to an `Object` instance.
+  - from a base class to the original derived class. Requires a casting operator.
+  - from a type that implements an interface to an interface object that represents that interface.
+  - from an interface object back to the original type that implements that interface. Requires a casting operator.
 
 - Custom type conversions:
 
-    - `implicit` operator - widen conversions between types
-    - `explicit` operator - narrow conversions between types
-    - `IConvertible` interface, `Convert` class and `TypeConverter` class
+  - `implicit` operator - widen conversions between types
+  - `explicit` operator - narrow conversions between types
+  - `IConvertible` interface, `Convert` class and `TypeConverter` class
 
 ## 27. What is a Delegate?
 
@@ -437,17 +437,17 @@
 - User action or system generated notifications that the application needs to respond to.
 - Using delegates events are declared and raised in a class and associated with event handlers.
 - Events are the publisher-subscriber model in which:
-    - Publisher class - containing the event. Publisher is the object containing the definition of the event and the delegate. Determines when the event is raised.
-    - Subscriber class - accepts the event. Subscriber object is that accepts the event and provides an event handler. Determinate that action is taken in response to the event. One event can have many subscribers.
+  - Publisher class - containing the event. Publisher is the object containing the definition of the event and the delegate. Determines when the event is raised.
+  - Subscriber class - accepts the event. Subscriber object is that accepts the event and provides an event handler. Determinate that action is taken in response to the event. One event can have many subscribers.
 
 ``` csharp
     // declare a delegate type for the event
     public delegate string BoilerLogHandler(string str);
- 
+
     class EventProgram {
         // declare the event
         event MyDel MyEvent;
-        
+
         public EventProgram() {
             this.MyEvent += new MyDel(this.WelcomeUser);
         }
@@ -509,10 +509,10 @@
 - A situation in the multi-threading programming that two or more threads are frozen in their execution because they are waiting for each other to finish.
 - A *lock* is a shared object that can be Acquired by a Thread, and then Released. It is a way to synchronize between Threads. Usually a Lock is placed around a critical section when we want a single Thread at a time.
 - Deadlock occurs when:
-    - a limited number of a particular resource.
-    - the ability to hold one resource and request another.
-    - no preemption capability (using before the other thread). One thread can't force another thread to release a lock.
-    - a circular wait condition.
+  - a limited number of a particular resource.
+  - the ability to hold one resource and request another.
+  - no preemption capability (using before the other thread). One thread can't force another thread to release a lock.
+  - a circular wait condition.
 - To avoid a Deadlock, the most common solutions are to use timeout value ( `System.Threading.Monitor` ), avoid unnecessary locks and avoid nested locks.
 
 ## 33. What is a Race Condition?
@@ -521,9 +521,9 @@
 - Race condition is when the outcome of the program is affected because of timing.
 - Resources that are accessed and updated within multiple threads are Shared resources.
 - The problem is solved by using thread-synchronization techniques:
-    - Atomic Update - `.NET`  `Interlocked` class to carry all the operations in one single operation.
-    - Data Partitioning - partitioning data for multiple threads. This technique can not be used when one slice of data depends on the other slice.
-    - Wait-Based Technique - a thread is safe until someone decides it's safe to proceed.  Used when the previous two techniques can not be adopted easily. `.NET` has Wait Based Primitives - `Monitor` , `Mutex` , `ReaderWriterLock` classes for that technique.
+  - Atomic Update - `.NET`  `Interlocked` class to carry all the operations in one single operation.
+  - Data Partitioning - partitioning data for multiple threads. This technique can not be used when one slice of data depends on the other slice.
+  - Wait-Based Technique - a thread is safe until someone decides it's safe to proceed.  Used when the previous two techniques can not be adopted easily. `.NET` has Wait Based Primitives - `Monitor` , `Mutex` , `ReaderWriterLock` classes for that technique.
 
 ## 34. What is Serialization?
 
@@ -532,10 +532,10 @@
 - The reverse process is deserialization.
 - The object is serialized into a stream (with information about the object - version, culture, assembly name) and is stored in the database, file or memory.
 - The serialized object can be:
-    - sent to a remote application by using a web service
-    - passed to another domain
-    - passed through a firewall as a `JSON` or `XML` string
-    - maintaining security or user-specific information across applications
+  - sent to a remote application by using a web service
+  - passed to another domain
+  - passed through a firewall as a `JSON` or `XML` string
+  - maintaining security or user-specific information across applications
 
 ## 35. Can multiple catch blocks be executed?
 
@@ -670,10 +670,9 @@
 - All types in the `.NET` type system inherit from `Object` .
 - If we don't want other classes to inherit from a class, we use `sealed` .
 - Not inherited from a class are:
-
-    - static constructors
-    - instance constructors
-    - finalizers - called by the runtime's garbage collector to destroy an instance
+      - static constructors
+      - instance constructors
+      - finalizers - called by the runtime's garbage collector to destroy an instance
 
 - Interfaces solve the problem with the single class inheritance. Interfaces work as a contract between the instances that implement them and the declared functionalities. One class can implement many interfaces.
 
@@ -844,7 +843,7 @@ public sealed class Singleton
 
 ## 55. Explain `Finalize` vs `Dispose` usage?
 
-### Finalize
+### Finalizers
 
 - Called by the garbage collector when it reclaims an object.
 - Should release unmanaged resources only.

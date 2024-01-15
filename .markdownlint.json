@@ -1,3 +1,5 @@
 {
-    "extends": "./node_modules/@strictr/markdown-lint-config/index.json"
+    "line-length": false,
+    "blanks-around-lists": false,
+    "no-blanks-blockquote": false
 }

@@ -118,7 +118,7 @@
 > - `let` can be update but not redeclared.
 > - Just like `var`, `let` declarations are hoisted to the top. Unlike `var` which is initialized as undefined, the `let` keyword is not initialized. So if you try to use a let variable before declaration, you'll get a `Reference Error`.
 
-## 21. What is the difference between a **let** variable and a **const** - variable? Provide an example.
+## 21. What is the difference between a **let** variable and a **const** - variable? Provide an example
 
 > `const` cannot be updated or re-declared BUT there is some specific behavior:
 > - value types are constants.
@@ -149,7 +149,7 @@
 
 > In JavaScript we can use callbacks, Promises and async/await to do async programing and WebWorkers to do parallel programming.
 
-## 26. Why is it bad to use global variables? Give examples.
+## 26. Why is it bad to use global variables? Give examples
 
 > The main reason is the shared state problem:
 
