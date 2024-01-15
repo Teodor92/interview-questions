@@ -7,16 +7,19 @@ List, LinkedList, Map, Set, Bag, Tree, Graph
 ## 2. What is the difference between Set, Map and List?
 
 ### Set
-- **Uniqueness:** A Set is a collection that cannot contain duplicate elements. 
+
+- **Uniqueness:** A Set is a collection that cannot contain duplicate elements.
 - **Usage:** It's typically used for membership testing, removing duplicates from a collection, and performing mathematical operations like union, intersection.
 - **Ordering:** Most Set implementations do not maintain the order of elements.
 
 ### Map
+
 - **Key-Value Pairs:** A Map is a collection that stores elements in key-value pairs. Each key maps to a specific value.
 - **Lookup Efficiency:** It's designed for efficient retrieval of values based on their keys.
 - **Uniqueness:** Keys are unique in the Map, but values can be duplicated.
 
 ### List
+
 - **Ordered Collection:** A List is an ordered sequence of elements. The elements can be accessed by their integer index.
 - **Duplicates:** It allows duplicate elements and maintains the insertion order.
 - **Functionality:** It's typically used for storing and accessing elements in a sequence, with functionalities like add, remove, and get based on index.

@@ -108,14 +108,14 @@ Yes. A Go function can return multiple values, each separated by commas in the r
 
 Wrapped errors in Go refer to the practice of adding additional context to an existing error before passing it up the call stack. This is particularly useful in error handling and debugging.
 
-### Key Points:
+### Key Points
 
 - **Error Wrapping:** In Go, you can wrap an error using the `%w` verb with `fmt.Errorf`. This allows you to add more context to the original error.
 - **Retrieving the Original Error:** You can use the `errors.Unwrap` function to retrieve the original error from a wrapped error.
 - **Error Checking:** Go provides the `errors.Is` and `errors.As` functions for checking the type or value of an error, including wrapped errors. `errors.Is` is used to check if any error in the error chain matches a specific error. `errors.As` is used to check if any error in the error chain matches a specific error type.
 - **Use Case:** Wrapping errors is useful when you want to maintain the original error information but also provide additional context about what was happening when the error occurred.
 
-### Example:
+### Example
 
 ```go
 import (

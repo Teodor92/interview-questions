@@ -229,15 +229,13 @@ and Object
 
 The scope chain is a fundamental concept in many programming languages, including JavaScript, that defines how variable names are resolved in nested scopes.
 
-### Key Points:
-
 - **Scope:** Scope refers to the visibility or accessibility of variables within different parts of a program.
 - **Lexical Scoping:** Most modern languages, like JavaScript, use lexical scoping, where the scope of a variable is defined by its position within the source code.
 - **Scope Chain Creation:** Each execution context (like a function) in JavaScript has its own scope chain. This chain consists of its own scope (local variables defined within the function), and the scopes of all its parent functions, up to the global scope.
 - **Variable Resolution:** When code refers to a variable, the JavaScript engine will look up the scope chain, starting from the current local scope, and moving up through parent scopes, until it finds the variable. If the variable is not found, it results in a reference error.
 - **Nested Functions:** In nested functions, the inner function’s scope chain includes the outer function’s scope. This is why inner functions can access variables of their outer functions.
 
-### Example:
+For example:
 
 ```javascript
 let globalVar = "global";
