@@ -2,82 +2,82 @@
 
 ## 1. Which are the different data types supported by TypeScript? What do they represent?
 
-> `boolean`, `number`, `string`, `object`, `Array`, `enum`, `any`, `void`, `never`, `unknown`
+`boolean`, `number`, `string`, `object`, `Array`, `enum`, `any`, `void`, `never`, `unknown`
 
 ## 2. What are classes in TypeScript?
 
-> They are basically ES6 classes with additional features like access modifiers, indexers etc.
+They are basically ES6 classes with additional features like access modifiers, indexers etc.
 
 ## 3. Does TypeScript support abstract classes? And what about interfaces? What is the difference?
 
-> Yes to both. The interface cannot have any implementation of it's methods in contrast to the abstract class. Additionally the abstract class can have fields.
+Yes to both. The interface cannot have any implementation of it's methods in contrast to the abstract class. Additionally the abstract class can have fields.
 
 ## 4. What types of access modifiers exit in a TypeScript class? What does each do?
 
-> `private`, `public` and `protected`
+`private`, `public` and `protected`
 
 ## 5. How do you implement inheritance in TypeScript?
 
-> Same as ES6 inheritance.
+Same as ES6 inheritance.
 
 ## 6. How do you implement and interface for a specific class?
 
-> Using the `implements` keyword.
+Using the `implements` keyword.
 
 ## 8. How do you call a base class constructor or a base class method form a child class?
 
-> Using the `super` keyword.
+Using the `super` keyword.
 
 ## 9. How can you expose a class/method/variable to the outside world?
 
-> Using the `exports` keyword. Same as ES6.
+Using the `exports` keyword. Same as ES6.
 
 ## 10. Does TypeScript support function overloading as JavaScript doesn’t support function overloading?
 
-> Not in a native way, but you can have a single implementation with multiple signatures.
+Not in a native way, but you can have a single implementation with multiple signatures.
 
 ## 11. What is an union, discriminated unions and intersection types?
 
-> A mix of multiple types using the `|` or `&` operators.
-> - Using the `&` creates a new type type holds **all the common properties** between type A and type B.
-> - Using the `|` creates a new type that holds **all the properties** for both type A and type B.
+A mix of multiple types using the `|` or `&` operators.
+- Using the `&` creates a new type type holds **all the common properties** between type A and type B.
+- Using the `|` creates a new type that holds **all the properties** for both type A and type B.
 
 ## 12. What is type inference?
 
-> Ability to infer the type from the existing code. There are 2 strategies:
-> - Best common type.
-> - Contextual typing.
+Ability to infer the type from the existing code. There are 2 strategies:
+- Best common type.
+- Contextual typing.
 
-> For more information: [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
+For more information: [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)
 
 ## 13. What are mapped types?
 
-> TODO: [Mapped types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
+TODO: [Mapped types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
 
 ## 14. What are Template Literal Types?
 
-> TOOD:
+TOOD:
 
 ## 15. What are Index Accessed Types?
 
-> TOOD:
+TOOD:
 
 ## 16. What are Conditional Types?
 
-> TOOD:
+TOOD:
 
 ## 17. What are Recursive types?
 
-> TOOD:
+TOOD:
 
 ## 18. What are Conditional Types and Conditional Recursive Types?
 
-> TOOD:
+TOOD:
 
 ## 19. What is Type Narrowing?
 
-> TOOD:
+TOOD:
 
 ## 20. What is the `in` operator?
 
-> TOOD:
+TOOD:
