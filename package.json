@@ -9,7 +9,8 @@
     },
     "scripts": {
         "lint": "markdownlint \"./**/*.md\" --ignore \"node_modules/**\"",
-        "release": "standard-version"
+        "release": "standard-version",
+        "prepare": "husky install"
     },
     "repository": {
         "type": "git",
@@ -22,6 +23,9 @@
     "author": "Teodor Kurtev",
     "license": "MIT",
     "devDependencies": {
+        "@commitlint/cli": "^18.4.4",
+        "@commitlint/config-conventional": "^18.4.4",
+        "husky": "^8.0.3",
         "markdownlint": "0.33.0",
         "markdownlint-cli": "0.38.0"
     }
