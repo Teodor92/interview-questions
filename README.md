@@ -1,8 +1,8 @@
-# Interview questions
+# Technical Interview questions
 
-A collection of interview questions for various languages, technologies and concepts, that can be used by interviewers or interviewees. Or just for the fun of it!
+A collection of technical interview questions for various languages, technologies and concepts, that can be used by interviewers or interviewees. Or just for the fun of it!
 
-## Contents
+## Topics
 
 You can find the following topics here:
 
