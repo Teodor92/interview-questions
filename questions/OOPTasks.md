@@ -1,7 +1,9 @@
 # **Warehouse Management System**
 
 ## **Level 1: Basic Product**
+
 ### **Goal:**
+
 Start by creating a system to represent products in a warehouse.
 
 - Create a blueprint for a product that includes:
@@ -13,7 +15,9 @@ Start by creating a system to represent products in a warehouse.
 ---
 
 ## **Level 2: Product Categories**
+
 ### **Goal:**
+
 Group products into categories to add more detail.
 
 - Create categories for products:
@@ -27,7 +31,9 @@ Group products into categories to add more detail.
 ---
 
 ## **Level 3: Warehouses**
+
 ### **Goal:**
+
 Introduce warehouses to store the products.
 
 - Create storage spaces called warehouses.
@@ -43,7 +49,9 @@ Introduce warehouses to store the products.
 ---
 
 ## **Level 4: Warehouse Network**
+
 ### **Goal:**
+
 Manage multiple warehouses as part of a network.
 
 - Create a system that manages several warehouses together.
@@ -56,7 +64,9 @@ Manage multiple warehouses as part of a network.
 ---
 
 ## **Level 5: Shipments and Tracking**
+
 ### **Goal:**
+
 Add the ability to manage shipments in and out of the warehouses.
 
 - Create a way to track shipments for the products.
@@ -73,7 +83,9 @@ Add the ability to manage shipments in and out of the warehouses.
 ---
 
 ## **Level 6: Using Interfaces and Generics**
+
 ### **Goal:**
+
 Introduce interfaces and generics to make the system more flexible, reusable, and extensible.
 
 - **Abstract Product Behavior:**
@@ -98,6 +110,7 @@ Introduce interfaces and generics to make the system more flexible, reusable, an
 ---
 
 ### **Summary:**
+
 By completing this task step by step, you'll design a warehouse system that:
 1. Starts with basic product details.
 2. Grows to categorize products.

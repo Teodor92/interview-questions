@@ -95,7 +95,7 @@ It might also produce some side effects that are not emitted through the `@Outpu
 For example, a component which gets current user data from a singleton service instantiated elsewhere; from an external API; or from LocalStorage. A component that changes the state of an external service;
 issues an API call; or changes the stored data in LocalStorage.
 
-- See [here](https://medium.com/@jtomaszewski/how-to-write-good-composable-and-pure-components-in-angular-2-1756945c0f5b) for more details.
+- See [this article on composable and pure components in Angular](https://medium.com/@jtomaszewski/how-to-write-good-composable-and-pure-components-in-angular-2-1756945c0f5b) for more details.
 
 ## 12. How do components communicate with each other?
 
