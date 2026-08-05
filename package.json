@@ -10,7 +10,7 @@
     "scripts": {
         "lint": "markdownlint \"./**/*.md\" --ignore \"node_modules/**\"",
         "release": "standard-version",
-        "prepare": "husky install"
+        "prepare": "husky"
     },
     "repository": {
         "type": "git",
